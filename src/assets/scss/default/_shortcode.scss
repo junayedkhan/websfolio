@@ -1,0 +1,19 @@
+
+._mb_60{
+    @media #{$md_layout, $sm_layout} {
+        margin-bottom: 60px !important;
+    }
+}
+
+._mb_50{
+    @media #{$md_layout, $sm_layout} {
+        margin-bottom: 50px !important;
+    }
+}
+
+._mb_20{
+
+    @media #{$large_mobile} {
+        margin-bottom: 20px !important;
+    }
+}

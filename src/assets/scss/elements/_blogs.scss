@@ -1,0 +1,133 @@
+
+.blogs{
+    margin-bottom: 5rem;
+}
+
+.react_model_inner{
+
+    .description_wrap{
+
+        .thumbnail{
+
+            .inner{
+                border-radius: 10px;
+                overflow: hidden;
+    
+                img{
+                    border: 0;
+                    vertical-align: middle;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .details{
+            margin-top: 30px;
+            margin-bottom: 33px;
+
+            .meta{
+                border-bottom: 1px solid #d9dee2;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+                font-weight: $p_semi_bold;
+            }
+
+            .title{
+                @include main_title;
+                font-size: 28px;
+                margin-top: 15px;
+            }
+        }
+
+        .main_content{
+
+            .description{
+
+                .bigger{
+                    font-size: 17px;
+                    margin-bottom: 33px;
+                    font-weight: $p_medium;
+                }
+
+                p{
+                    margin-bottom: 22px;
+                }
+
+                .quote_box{
+                    width: 100%;
+                    height: auto;
+                    clear: both;
+                    float: left;
+                    position: relative;
+                    padding-left: 70px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    .icon{
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+
+                        i{
+                            font-size: 56px;
+                        }
+                    }
+
+                    p{
+                        font-size: 17px;
+                        font-weight: $p_medium;
+                    }
+                }
+            }
+        }
+
+        .comment{
+
+            .inner{
+
+                .title{
+                    font-size: 32px;
+                    font-weight: $p_semi_bold;
+                    color: $color_heading_wv;
+                    margin: 40px 0;
+                }
+
+                .from_group{
+                    margin-bottom: 20px;
+
+                    input{
+                        @include input;
+                    }
+        
+                    textarea{
+                        @include textarea;
+                        height: 205px;
+                    }
+                }
+                
+                .from_group_btn{
+
+                    button{
+                        background: $gradient_box_w;
+                        box-shadow: $shadow_white_3;
+                        color: $color_primary;
+                        border-radius: 6px;
+                        font-size: 15px;
+                        font-size: $p_medium;
+                        padding: 13px 35px;
+                        text-transform: uppercase;
+                        border: none;
+                        transition: $transition;
+
+                        &:hover{
+                            background: $gradient_red_hover;
+                            color: $color_secondary;
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

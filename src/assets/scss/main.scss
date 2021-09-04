@@ -1,0 +1,25 @@
+// ===== bootstrap ===== //
+@import "~bootstrap/scss/bootstrap";
+
+
+// ===== default ===== //
+@import "default/veriables";
+@import "default/reset";
+@import "default/shortcode";
+@import "default/mixin";
+@import "default/slick_style";
+@import "default/social_share";
+
+
+// ===== elements ===== //
+@import "elements/side_navigation";
+@import "elements/section_title";
+@import "elements/home";
+@import "elements/about";
+@import "elements/testimonial";
+@import "elements/clients";
+@import "elements/card";
+@import "elements/react_model";
+@import "elements/portfolio";
+@import "elements/blogs";
+@import "elements/contact";
