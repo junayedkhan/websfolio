@@ -8,11 +8,11 @@ const Navbar = () => {
     const openMenu= ()=> setIsOpen(!isOpen);
 
     const nav_link = [
-        {to: "/", name: "home", icon: "fas fa-home"},
-        {to: "/about", name: "about", icon: "fas fa-user"},
-        {to: "/portfolio", name: "portfolio", icon: "fas fa-briefcase"},
-        {to: "/blogs", name: "blogs", icon: "fas fa-envelope-open"},
-        {to: "/contact", name: "contact", icon: "fas fa-comments"},
+        {to: "/", name: "home", icon: "fas fa-home", text: "home"},
+        {to: "/about", name: "about", icon: "fas fa-user", text: "about"},
+        {to: "/portfolio", name: "portfolio", icon: "fas fa-briefcase", text: "portfolio"},
+        {to: "/blogs", name: "blogs", icon: "fas fa-envelope-open", text: "blogs"},
+        {to: "/contact", name: "contact", icon: "fas fa-comments", text: "contact"},
     ]
 
     return (
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link to={val.to}>
                             <li className="nav_link" key={index}>
                                 <i className={val.icon} id="icon"></i>
-                                {/* <p className="nav_link_text">{val.name}</p> */}
+                                <span class="tooltiptext">{val.text}</span>
                             </li>
                         </Link>
                         </>

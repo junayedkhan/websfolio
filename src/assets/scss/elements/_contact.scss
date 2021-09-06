@@ -7,6 +7,7 @@
         background: $gradient_box_w;
         box-shadow: $shadow_white_3;
         height: 100%;
+        
 
         @media #{$large_mobile} {
             padding: 45px 20px 40px;
@@ -93,6 +94,7 @@
 
         .form_group{
             margin-bottom: 20px;
+            position: relative;
 
             label{
                 font-size: 12px;
@@ -114,31 +116,25 @@
             textarea{
                 @include textarea;
             }
+
+            .errors{
+                @include errors;
+            }
         
         }
 
         .contact_btn{
+            @include button;
             width: 100%;
-            padding: 15px 35px;
-            border: none;
-            outline: none;
-            background: $gradient_box_w;
-            box-shadow: $shadow_white_3;
-            color: $color_primary;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: $transition;
-
-            span{
-                margin-right: 5px;
-            }
-
-            &:hover{
-                background: $gradient_red_hover;
-                color: $color_secondary;
-                transform: translateY(-5px);
-            }
         }
+
+
+
     }
+}
+
+.alert_btn{
+    @include button;
+    background: #fff;
+    padding: 6px 24px;
 }

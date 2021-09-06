@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import React, {useState} from 'react'
 import {blogsdata} from "./BlogsDtata"
 import Title from '../Title'
 import BlogDetails from './BlogDetails'
@@ -8,8 +6,6 @@ import BlogDetails from './BlogDetails'
 const Blogs = () => {
 
     const [openModel, setopenModel] = useState(false)
-    const [data, setData] = useState([])
-    const {id} = useParams()
 
     return (
         <>

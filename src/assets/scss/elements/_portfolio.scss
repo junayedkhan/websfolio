@@ -5,14 +5,8 @@
         margin-bottom: 20px;
 
         .tag{
-            background: $gradient_box_w;
-            box-shadow: $shadow_white_3;
-            color: $color_midgray;
-            font-weight: 600;
-            padding: 10px 25px;
+            @include button;
             margin: 10px 5px;
-            border: none;
-            border-radius: 5px;
 
             @media #{$sm_layout} {
                 width: 100%;

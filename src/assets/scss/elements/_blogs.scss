@@ -93,8 +93,9 @@
                     margin: 40px 0;
                 }
 
-                .from_group{
+                .form_group{
                     margin-bottom: 20px;
+                    position: relative;
 
                     input{
                         @include input;
@@ -104,27 +105,17 @@
                         @include textarea;
                         height: 205px;
                     }
+
+                    .errors{
+                        @include errors;
+                        top: -43px;
+                    }
                 }
                 
-                .from_group_btn{
+                .form_group_btn{
 
                     button{
-                        background: $gradient_box_w;
-                        box-shadow: $shadow_white_3;
-                        color: $color_primary;
-                        border-radius: 6px;
-                        font-size: 15px;
-                        font-size: $p_medium;
-                        padding: 13px 35px;
-                        text-transform: uppercase;
-                        border: none;
-                        transition: $transition;
-
-                        &:hover{
-                            background: $gradient_red_hover;
-                            color: $color_secondary;
-                            transform: translateY(-5px);
-                        }
+                        @include button;
                     }
                 }
             }

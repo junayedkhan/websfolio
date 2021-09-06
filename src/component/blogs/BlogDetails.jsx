@@ -1,5 +1,6 @@
 import React from 'react'
 import img from "../../assets/image/blog-01.jpg"
+import Comment from './Comment'
  
 const BlogDetails = ({setopenModel}) => {
     return (
@@ -47,55 +48,7 @@ const BlogDetails = ({setopenModel}) => {
                     </div>
                 </div>
 
-                <div className="comment">
-                    <div className="inner">
-                        <h3 className="title">leave a replay</h3>
-
-                        <form action="">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-12 col-12">
-
-                                    <div className="from_group">
-                                         <input
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Name"
-                                        />
-                                    </div>
-                                    <div className="from_group">
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Email"
-                                        />
-                                    </div>
-                                    <div className="from_group">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Phone(optional)"
-                                        />
-                                    </div>
-
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-12">
-                                    <div className="from_group">
-                                        <textarea placeholder="Comment"></textarea>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-12">
-                                    <div className="from_group_btn">
-                                        <button type="submit">submit now</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                <Comment />
 
             </div>
         </section> 

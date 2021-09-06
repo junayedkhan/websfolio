@@ -198,8 +198,8 @@ export const testimonial = [
 // ====== clients ======= //
 export const clients = [
     {img: brand_01, alt: "clients_name", name: "john due"},
-    {img: brand_02, alt: "clients_name", name: "john due"},
-    {img: brand_03, alt: "clients_name", name: "john due"},
-    {img: brand_04, alt: "clients_name", name: "john due"},
-    {img: brand_05, alt: "clients_name", name: "john due"}
+    {img: brand_02, alt: "clients_name", name: "Smiths Marth"},
+    {img: brand_03, alt: "clients_name", name: "Adon Smith"},
+    {img: brand_04, alt: "clients_name", name: "Smitha Mila"},
+    {img: brand_05, alt: "clients_name", name: "Mila Dus"}
 ]
