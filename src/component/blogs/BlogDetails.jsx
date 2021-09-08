@@ -7,7 +7,7 @@ const BlogDetails = ({setopenModel}) => {
         <>
         <section className="react_model_inner">
             <button onClick={() => setopenModel(false)} className="react_model_close"><i class="fas fa-times"></i></button>
-            <div className="description_wrap">
+            <div className="blog_details">
 
                 <div className="thumbnail">
                     <div className="inner">

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import img from "../../assets/image/banner-04.jpg"
 
 const Home = () => {
@@ -44,9 +43,9 @@ const Home = () => {
                                                 {social_share.map((val, index) => {
                                                     return(
                                                     <li key={index}>
-                                                        <Link to={val.link} className="social_icon">
-                                                            <i class={val.iconName}></i>
-                                                        </Link>
+                                                        <a href={val.link} target="blank" className="social_icon">
+                                                            <i className={val.iconName}></i>
+                                                        </a>
                                                     </li>
                                                     )
                                                 })}

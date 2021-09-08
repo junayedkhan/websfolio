@@ -43,7 +43,7 @@ const Testimonial = () => {
 
     return (
         <>
-        <Slider {...settings} className="slick_slider">
+        <Slider {...settings} className="testimonial">
 
             {testimonial.map((val, index) => {
                 return(

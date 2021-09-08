@@ -47,7 +47,7 @@ const Portfolio = () => {
                                     <div className="card_content">
                                         <div className="category_info">
                                             <p className="category_list">{val.tag}</p>
-                                            <p className="meta">{val.meta}</p>
+                                            <p className="meta"><i class="fas fa-heart"></i> {val.meta}</p>
                                         </div>
                                         <h4 className="title" onClick={() => setopenModel(true)}>{val.title}</h4>
                                     </div>

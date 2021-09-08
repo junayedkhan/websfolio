@@ -7,6 +7,7 @@ import Portfolio from '../component/portfolio/Portfolio'
 import Blogs from '../component/blogs/Blogs'
 import Contact from '../component/contact/Contact'
 
+
 const Router = () => {
     return (
         <section className="websfolio_th">

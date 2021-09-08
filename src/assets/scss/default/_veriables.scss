@@ -84,7 +84,11 @@ $h6: 20px;
     $background_color_1: linear-gradient(145deg, #1e2024, #23272b);
     $background_color_2: #212428;
     $background_color_3: #ECF0F3;
-    $color_title_bg: rgba(30, 37, 48, 0.07);
+    $background_color_4: #1b1c1d;
+    $color_title_bg_1: rgba(30, 37, 48, 0.07);
+    $color_title_bg_2: rgba(211, 218, 231, 0.07);
+    // $color_title_bg_2: rgba(161, 166, 175, 0.07);
+    
 
     // box-shadow
     $shadow_1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -95,9 +99,11 @@ $h6: 20px;
     // Gradient
     $gradient_box_w: linear-gradient(145deg, #e2e8ec, #ffffff);
     $gradient_red_hover: linear-gradient(145deg, #ff014f, #d11414);
+    $gradient_black_hover: linear-gradient(to right bottom, #212428, #16181c);
 
 
     // typo Color
+    $color_1: #7c838e;
     $color_heading: #ffffff;
     $color_heading_wv: #1e2125;
     $color_body: #878e99;
@@ -184,4 +190,3 @@ $md_layout:'only screen and (min-width: 768px) and (max-width: 991px)';
 $sm_layout:'only screen and (max-width: 767px)';
 $large_mobile: 'only screen and (max-width: 575px)';
 $small_mobile: 'only screen and (max-width: 479px)';
-$mobile: 'only screen and (max-width: 1200px)'

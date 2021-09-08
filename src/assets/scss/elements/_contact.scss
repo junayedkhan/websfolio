@@ -1,5 +1,5 @@
 .contact{
-    margin-bottom: 5rem;
+   padding-bottom: 3rem;
 
     .contact_about_area{
         padding: 45px 25px 40px;
@@ -137,4 +137,73 @@
     @include button;
     background: #fff;
     padding: 6px 24px;
+}
+
+
+
+// ===== dark mode ===== //
+body.dark .contact{
+
+    .contact_about_area{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+
+        .title_area{
+         
+            .title{
+                color: $color_lightn;
+            }
+
+        }
+
+        .description{
+
+            P{
+                color: $color_body;
+            }
+
+            .phone, .mail{
+                color: $color_lightn;
+            }
+        }
+    }
+
+
+    .contact_form_wrapper{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+
+        .form_group{
+
+            label{
+                color: $color_body;
+            }
+
+            input{
+                background: #191b1e;
+                color: $color_lightn;
+                box-shadow: $inner_shadow;
+                border: none;
+            }
+
+            textarea{
+                background: #191b1e;
+                color: $color_lightn;
+                box-shadow: $inner_shadow;
+                border: none;
+            }
+
+        }
+
+        .contact_btn{
+            background: $background_color_1;
+            box-shadow: $shadow_1;
+
+            &:hover{
+                background: $gradient_black_hover;
+                color: $color_primary;
+            }
+        }
+    }
+
 }

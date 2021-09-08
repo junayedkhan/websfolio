@@ -44,3 +44,23 @@
         }
     }
 }
+
+
+// ===== dark mode ===== //
+body.dark .social_share{
+
+    .title{
+        color: $color_lightn;
+        opacity: 0.9;
+    }
+    
+    .social_share_inner .social_icon{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+        color: $color_white;
+
+        &:hover{
+            background: $gradient_black_hover;
+        }
+    }
+}

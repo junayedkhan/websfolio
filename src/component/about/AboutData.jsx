@@ -3,11 +3,11 @@ import img_04 from "../../assets/image/img_04.jpg"
 import img_05 from "../../assets/image/img_05.jpg"
 import img_06 from "../../assets/image/img_06.jpg"
 
-import brand_01 from "../../assets/image/brand-01.png"
-import brand_02 from "../../assets/image/brand-02.png"
-import brand_03 from "../../assets/image/brand-03.png"
-import brand_04 from "../../assets/image/brand-04.png"
-import brand_05 from "../../assets/image/brand-05.png"
+import brand_01 from "../../assets/image/1.png"
+import brand_02 from "../../assets/image/2.png"
+import brand_03 from "../../assets/image/3.png"
+import brand_04 from "../../assets/image/4.png"
+import brand_05 from "../../assets/image/5.png"
 
 
 // ====== tab list ====== //

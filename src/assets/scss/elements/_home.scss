@@ -126,3 +126,26 @@
 
 }
 
+
+// ===== dark mode ===== //
+body.dark .home .home_content .inner{
+
+    .subtitle{
+        color: $color_lightn;
+        opacity: 0.9;
+    }
+
+    .title{
+        color: $color_heading;
+
+        .text{
+            color: $color_primary;
+        }
+    }
+
+    .description{
+        color: $color_lightn;
+        opacity: 0.9;
+    }
+}
+

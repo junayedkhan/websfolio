@@ -9,6 +9,7 @@
         color: $color_heading_wv;
         text-transform: uppercase;
         margin: 0;
+        z-index: 1000;
 
         @media #{$large_mobile} {
             font-size: 40px;
@@ -34,11 +35,24 @@
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
-        color: $color_title_bg;
+        color: $color_title_bg_1;
 
         @media #{$large_mobile} {
             font-size: 70px;
         }
 
+    }
+}
+
+
+// ===== dark mode ===== //
+body.dark .title_section {
+
+    .title{
+        color: $color_lightn;
+    }
+
+    .title_bg{
+        color: $color_title_bg_2;
     }
 }

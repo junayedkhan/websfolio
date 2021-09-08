@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <>
-        <main className="about">
+        <section className="about">
 
             <Title
                 title_bg="resume"
@@ -259,7 +259,7 @@ const About = () => {
                         
                     </Tabs>
             </div>
-        </main>
+        </section>
 
         <section>
             <div className="container">
@@ -282,7 +282,6 @@ const About = () => {
                 <Clients /> 
             </div>
         </section>
-
         
         </>
     )

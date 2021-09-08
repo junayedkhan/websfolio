@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
 import Title from "../Title"
 import img from "../../assets/image/contact1.png"
 import swal from 'sweetalert'
@@ -8,7 +7,6 @@ import swal from 'sweetalert'
 const Contact = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
-    const [all, setAll] = useState([])
 
     const social_share = [
         {
@@ -37,12 +35,7 @@ const Contact = () => {
             }
         })
     }
-    
-    console.log(all) 
-    
-    const alert = () => {
-        swal("Good job!", "You clicked the button!", "success");
-    }
+
 
     return (
         <>
@@ -61,13 +54,13 @@ const Contact = () => {
                                 <img src={img} alt="contact" />
                             </div>
                             <div className="title_area">
-                                <h4 className="title" onClick={alert}>Nevine Acotanza</h4>
+                                <h4 className="title">Nevine Acotanza</h4>
                                 <span>Chief Operating Officer</span>
                             </div>
                             <div className="description">
                                 <p>I am available for freelance work. Connect with me via and call in to my account.</p>
-                                <span className="phone">Phone: <Link to="tel:01941043264">+01234567890</Link></span>
-                                <span className="mail">Email: <Link to="mailto:admin@example.com">admin@example.com</Link></span>
+                                <span className="phone">Phone: <a href="tel:00000000000">+01234567890</a></span>
+                                <span className="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
                             </div>
                             <div className="social_share">
                                 <span className="title">find with me</span>
@@ -75,9 +68,9 @@ const Contact = () => {
                                     {social_share.map((val, index) => {
                                         return(
                                         <li key={index}>
-                                            <Link to={val.link} className="social_icon">
+                                            <a href={val.link} target="blank" className="social_icon">
                                                 <i class={val.iconName}></i>
-                                            </Link>
+                                            </a>
                                         </li>
                                         )
                                     })}

@@ -1,5 +1,4 @@
-.slick_slider{
-    background: $background_color_3 !important;
+.testimonial{
     position: relative;
     margin-top: 40px;
 
@@ -146,4 +145,54 @@
         }
     }
 
+}
+
+
+
+// ===== dark mode ===== //
+body.dark .testimonial .inner{
+
+    .card_info{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+
+        .card_content{
+
+            .name{
+                color: $color_lightn;
+            }
+
+            .designation{
+                color: $color_body;
+            }
+        }
+    }
+
+    .card_description{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+
+        &::before, &::after{
+            background: $background_color_4;
+        }
+
+        .title_area .title_info{
+
+            .title{
+                color: $color_lightn;
+            }
+
+            .date{
+                color: $color_body;
+            }
+        }
+
+        .description{
+            color: $color_body;
+
+            &::before{
+                background: $background_color_4;
+            }
+        }
+    }
 }

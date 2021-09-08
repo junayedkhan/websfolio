@@ -1,5 +1,5 @@
 .portfolio{
-    margin-bottom: 5rem;
+    padding-bottom: 3rem;
 
     .portfolio_tags{
         margin-bottom: 20px;
@@ -7,6 +7,7 @@
         .tag{
             @include button;
             margin: 10px 5px;
+            color: $color_heading_wv;
 
             @media #{$sm_layout} {
                 width: 100%;
@@ -57,36 +58,84 @@
                 color: $color_body_white;
             }
 
-            .btn_group{
-                margin-left: -10px;
-
-                .button{
-                    border: none;
-                    background: $gradient_box_w;
-                    box-shadow: $shadow_white_3;
-                    height: 60px;
-                    line-height: 60px;
-                    padding: 0 20px;
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    border-radius: 6px;
-                    font-weight: 500;
-                    color: $color_primary;
-                    transition: $transition;
-                    margin: 0 10px;
-
-                    &:hover{
-                        background: $gradient_red_hover;
-                        transform: translateY(-5px);
-                        color: $color_heading;
-                    }
-
-                    @media #{$large_mobile} {
-                        
-                    }
-                }
-
-            }
         }
     }
+
+    .btn_group{
+        margin-left: -10px;
+
+        .button{
+            border: none;
+            background: $gradient_box_w;
+            box-shadow: $shadow_white_3;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            font-weight: 500;
+            color: $color_primary;
+            transition: $transition;
+            margin: 0 10px;
+
+            &:hover{
+                background: $gradient_red_hover;
+                transform: translateY(-5px);
+                color: $color_heading;
+            }
+
+            @media #{$large_mobile} {
+                
+            }
+        }
+
+    }
 }
+
+
+
+// ===== dark mode ===== //
+body.dark{
+
+    .portfolio .portfolio_tags{
+
+        .tag{
+            color: $color_lightn;
+            background: $background_color_1;
+            box-shadow: $shadow_1;
+        }
+    
+        .active{
+            color: $color_primary;
+            background: $gradient_black_hover;
+        }
+    }
+
+
+    .porfolio_details .text_content .inner{
+        
+        .title{
+            color: $color_lightn;
+        }
+
+        .description_1, .description_2{
+            color: $color_body;
+        }
+    }
+
+    .btn_group .button{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+
+        &:hover{
+            background: $gradient_black_hover;
+            color: $color_primary;
+        }
+    }
+
+}
+
+
+
+

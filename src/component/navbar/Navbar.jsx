@@ -33,7 +33,7 @@ const Navbar = () => {
                     return(
                         <>
                         <Link to={val.to}>
-                            <li className="nav_link" key={index}>
+                            <li className="nav_link" key={index} onClick={openMenu}>
                                 <i className={val.icon} id="icon"></i>
                                 <span class="tooltiptext">{val.text}</span>
                             </li>

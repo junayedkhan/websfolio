@@ -26,11 +26,12 @@ const PortfolioDetails = ({setopenModel}) => {
                             <p className="description_2">
                                 Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
                             </p>
-                            <div className="btn_group">
-                                <button className="button _mb_20">like this <i class="far fa-thumbs-up"></i></button>
-                                <button className="button">view project <i class="fas fa-chevron-right"></i></button>
-                            </div>
                         </div>
+                    </div>
+
+                    <div className="btn_group">
+                        <button className="button _mb_20">like this <i class="far fa-thumbs-up"></i></button>
+                        <button className="button">view project <i class="fas fa-chevron-right"></i></button>
                     </div>
 
                 </div>

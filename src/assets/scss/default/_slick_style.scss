@@ -23,25 +23,29 @@
     right: 80px;
 }
 
+.slick-dots{
+    bottom: -10px;
+}
+
 .slick-dots li {
-width: auto;
-height: auto;
-padding: 10px;
-margin: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 0;
 }
 
 .slick-dots li button {
-font-size: 0;
-line-height: 0;
-width: 11px;
-height: 11px;
-padding: 0;
-cursor: pointer;
-border: 0;
-box-shadow: none;
-background: #ced2d5;
-border-radius: 50%;
-transition: $transition;
+    font-size: 0;
+    line-height: 0;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    box-shadow: none;
+    background: #ced2d5;
+    border-radius: 50%;
+    transition: $transition;
 
 &::before{
     display: none;
@@ -49,5 +53,25 @@ transition: $transition;
 }
 
 .slick-dots li.slick-active button {
-background: $color_primary;
+    background: $color_primary;
+}
+
+
+
+// ===== dark mode ===== //
+body.dark{
+
+    .slick_next, .slick_prev{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+    }
+
+    .slick-dots li button {
+        background: $background_color_1;
+        box-shadow: $inner_shadow;
+    }
+
+    .slick-dots li.slick-active button {
+        background: $color_primary;
+    }
 }

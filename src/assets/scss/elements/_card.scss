@@ -38,6 +38,7 @@
                 height: auto;
                 object-fit: cover;
                 cursor: pointer;
+                transition: $transition;
             }
         }
 
@@ -59,6 +60,10 @@
                     font-weight: 500;
                     font-family: $font_primary;
                     font-size: 13px;
+
+                    i{
+                        color: $color_primary
+                    }
                 }
             }
 
@@ -72,6 +77,25 @@
                 }
             }
 
+        }
+    }
+}
+
+
+
+// ===== dark mode ===== //
+body.dark .card{
+    background: $background_color_1;
+    box-shadow: $shadow_1;
+
+    .inner .card_content{
+
+        .category_info .meta{
+            color: $color_lightn;
+        }
+
+        .title{
+            color: $color_lightn;
         }
     }
 }

@@ -60,3 +60,23 @@
     border: none;
     z-index: 1001;
 }
+
+
+
+// ===== dark mode ===== //
+body.dark{
+
+    .react_model.overlay{
+        background: $background_color_2;
+    }
+
+    .react_model_inner{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+    }
+
+    .react_model_close{
+        background: $background_color_1;
+        box-shadow: $shadow_1;
+    }
+}
