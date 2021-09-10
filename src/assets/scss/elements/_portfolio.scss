@@ -104,6 +104,11 @@ body.dark{
             color: $color_lightn;
             background: $background_color_1;
             box-shadow: $shadow_1;
+
+            &:hover{
+                background: $gradient_black_hover;
+                color: $color_primary;
+            }
         }
     
         .active{

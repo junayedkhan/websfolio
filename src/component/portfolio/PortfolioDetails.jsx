@@ -30,8 +30,8 @@ const PortfolioDetails = ({setopenModel}) => {
                     </div>
 
                     <div className="btn_group">
-                        <button className="button _mb_20">like this <i class="far fa-thumbs-up"></i></button>
-                        <button className="button">view project <i class="fas fa-chevron-right"></i></button>
+                        <button className="button _mb_20">like this <i className="far fa-thumbs-up"></i></button>
+                        <button className="button">view project <i className="fas fa-chevron-right"></i></button>
                     </div>
 
                 </div>

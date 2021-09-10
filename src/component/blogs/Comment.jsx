@@ -3,10 +3,11 @@ import { useForm } from 'react-hook-form'
 
 const Comment = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
     const onSubmit = (data) => {
-        console.log(data)
+        console.log("comment: ", JSON.stringify(data) );
+        reset()
     }
 
     return (
@@ -19,6 +20,7 @@ const Comment = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-12">
 
+                            {/* == name == */}
                             <div className="form_group">
                                 <input
                                     type="text"
@@ -29,6 +31,8 @@ const Comment = () => {
                                 />
                                 {errors.name?.message && <p className="errors">{errors.name.message}</p>}
                             </div>
+
+                            {/* == email == */}
                             <div className="form_group">
                                 <input
                                     type="text"
@@ -42,11 +46,13 @@ const Comment = () => {
                                 />
                                 {errors.email?.message && <p className="errors">{errors.email.message}</p>}
                             </div>
+
+                            {/* == phone number == */}
                             <div className="form_group">
                                 <input
                                     type="text"
-                                    name="name"
-                                    id="name"
+                                    name="phone"
+                                    id="phone"
                                     placeholder="Phone(optional)"
                                     {...register("phone",
                                     { required: false,
@@ -57,7 +63,10 @@ const Comment = () => {
                             </div>
 
                         </div>
+
                         <div className="col-lg-6 col-md-12 col-12">
+                                        
+                            {/* == comment == */}
                             <div className="form_group">
                                 <textarea
                                     placeholder="Comment"
@@ -65,7 +74,9 @@ const Comment = () => {
                                 ></textarea>
                                 {errors.massage?.message && <p className="errors">{errors.massage.message}</p>}
                             </div>
+
                         </div>
+
                         <div className="col-lg-6 col-md-12 col-12">
                             <div className="form_group_btn">
                                 <button type="submit">submit now</button>

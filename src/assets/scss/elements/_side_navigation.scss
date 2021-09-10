@@ -20,19 +20,19 @@
         justify-content: center;
         margin: 15px 0;
         background: $gradient_box_w;
-        // box-shadow: $shadow_white_3;
         backdrop-filter: blur(15px) !important;
         border-radius: 50%;
         color: $color_tertiary;
         font-size: $font_size_b1;
         cursor: pointer;
-        position: relative;
+        transition: $transition;
+        position: relative;     
 
         .tooltiptext {
             visibility: hidden;
             width: 130px;
-            background: $gradient_box_w;
-            color: $color_heading_wv;
+            background: $gradient_red_hover;
+            color: $color_white;
             text-align: center;
             border-radius: 6px;
             padding: 6px;
@@ -48,6 +48,9 @@
         }
         
         &:hover{
+
+            background: $gradient_red_hover;
+            color: $color_white;
 
             .tooltiptext{
                 visibility: visible;
@@ -130,8 +133,12 @@ body.dark{
         background: $background_color_1;
         color: $color_white;
 
+        &:hover{
+            background: $gradient_black_hover;
+        }
+
         .tooltiptext{
-            background: $background_color_1;
+            background: $gradient_black_hover;
             color: $color_white;  
         }
     }

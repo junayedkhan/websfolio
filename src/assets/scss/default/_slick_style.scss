@@ -16,6 +16,12 @@
     align-items: center;
     font-size: 25px;
     color: $color_primary;
+    transition: $transition;
+
+    &:hover{
+        background: $gradient_red_hover;
+        color: $color_white;
+    }
     
 }
 
@@ -64,6 +70,11 @@ body.dark{
     .slick_next, .slick_prev{
         background: $background_color_1;
         box-shadow: $shadow_1;
+
+        &:hover{
+            background: $gradient_black_hover;
+            color: $color_primary;
+        }
     }
 
     .slick-dots li button {

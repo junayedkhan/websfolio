@@ -34,7 +34,7 @@ function App() {
       >
         {darkMode ?
         (<i className="fas fa-sun" style={{color: "#c4cfde"}}></i>) :
-        (<i class="fas fa-moon" style={{color: "#212428"}}></i>)}
+        (<i className="fas fa-moon" style={{color: "#212428"}}></i>)}
       </button>
       <Router />
     </>

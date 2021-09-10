@@ -11,7 +11,7 @@ const Clients = () => {
         infinite: true,
         speed: 500,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -46,8 +46,8 @@ const Clients = () => {
             <Slider {...settings} className="client_slider">
                 {clients.map((val, index) => {
                     return(
-                    <div className="inner">
-                        <div className="client" key={index}>
+                    <div className="inner" key={index}>
+                        <div className="client" >
                             <div className="thumbnail">
                                 <img src={val.img} alt={val.name} className="img"/>
                             </div>

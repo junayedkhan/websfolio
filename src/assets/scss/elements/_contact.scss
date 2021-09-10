@@ -133,11 +133,19 @@
     }
 }
 
-.alert_btn{
-    @include button;
+
+// ===== sweet alert ===== //
+.alert{
     background: #fff;
-    padding: 6px 24px;
+
+    .alert_btn{
+        @include button;
+        background: #fff;
+        padding: 6px 24px;
+    }
+    
 }
+
 
 
 
@@ -206,4 +214,19 @@ body.dark .contact{
         }
     }
 
+}
+
+
+
+body.dark{
+
+    .alert{
+    
+        .alert_btn{
+            @include button;
+            background: #fff;
+            padding: 6px 24px;
+        }
+        
+    }
 }

@@ -31,14 +31,12 @@ const Navbar = () => {
 
                 {nav_link.map((val, index) => {
                     return(
-                        <>
-                        <Link to={val.to}>
-                            <li className="nav_link" key={index} onClick={openMenu}>
-                                <i className={val.icon} id="icon"></i>
-                                <span class="tooltiptext">{val.text}</span>
-                            </li>
-                        </Link>
-                        </>
+                    <Link to={val.to} key={index}>
+                        <li className="nav_link" onClick={openMenu}>
+                            <i className={val.icon} id="icon"></i>
+                            <span className="tooltiptext">{val.text}</span>
+                        </li>
+                    </Link>
                     )
                 })}
 

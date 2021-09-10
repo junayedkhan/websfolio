@@ -90,7 +90,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
     <div className="slick_next" onClick={onClick}>
-        <i class="fas fa-arrow-right"></i>
+        <i className="fas fa-arrow-right"></i>
     </div>
     );
 }
@@ -99,7 +99,7 @@ function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
     <div className="slick_prev" onClick={onClick}>
-        <i class="fas fa-arrow-left"></i>
+        <i className="fas fa-arrow-left"></i>
     </div>
     );
 }

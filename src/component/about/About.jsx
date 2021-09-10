@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Title from '../Title';
 import Testimonial from './Testimonial';
 import Clients from './Clients';
-import Skeleton from 'react-loading-skeleton';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {
         tab_list,

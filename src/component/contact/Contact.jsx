@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import Title from "../Title"
 import img from "../../assets/image/contact1.png"
-import swal from 'sweetalert'
 
 const Contact = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
     const social_share = [
         {
@@ -23,17 +22,9 @@ const Contact = () => {
         }
     ]
 
-    const onSubmit = () => {
-        swal("Good Job!", "Successfully Submitted", "success", {
-            timer: 3000,
-            button:{
-                text: "close",
-                value: true,
-                visible: true,
-                className: "alert_btn",
-                closeModal: true,
-            }
-        })
+    const onSubmit = (data) => {
+        console.log("massage: ", JSON.stringify(data) );
+        reset()
     }
 
 
@@ -83,24 +74,27 @@ const Contact = () => {
 
                             <form className="row" id="contact_form" onSubmit={handleSubmit(onSubmit)}>
 
+                                {/* == name == */}
                                 <div className="col-lg-6">
                                     <div className="form_group">
-                                        <label for="contact_name">Your Name</label>
-                                        <input                                         
+                                        <label>Your Name</label>
+                                        <input     
+                                            name="phone"                                    
                                             type="text"
-                                            id="contact_name"
+                                            id="name"
                                             {...register("name", { required: "Name is required." })}
                                         />
                                         {errors.name?.message && <p className="errors">{errors.name.message}</p>}
                                     </div>
                                 </div>
 
+                                {/* == phone == */}
                                 <div className="col-lg-6">
                                     <div className="form_group">
-                                        <label for="contact_phone">Phone Number</label>
+                                        <label>Phone Number</label>
                                         <input 
-                                            name="contact_phone"
-                                            id="contact_phone"
+                                            name="phone"
+                                            id="phone"
                                             type="text"
                                             {...register("phone",
                                             { required: false,
@@ -111,12 +105,13 @@ const Contact = () => {
                                     </div>
                                 </div>
 
+                                {/* == email == */}
                                 <div className="col-lg-12">
                                     <div className="form_group">
-                                        <label for="contact_email">Email</label>
+                                        <label>Email</label>
                                         <input
-                                            id="contact_email"
-                                            name="contact_email"
+                                            id="email"
+                                            name="email"
                                             type="email"
                                             {...register("email",
                                             { required: "Email is required.",
@@ -127,10 +122,10 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-
+                                {/* == subject == */}
                                 <div className="col-lg-12">
                                     <div className="form_group">
-                                        <label for="subject">subject</label>
+                                        <label>subject</label>
                                         <input
                                             id="subject"
                                             name="subject"
@@ -141,13 +136,13 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-
+                                {/* == massage == */}
                                 <div className="col-lg-12">
                                     <div className="form_group">
-                                        <label for="contact_message">Your Message</label>
+                                        <label>Your Message</label>
                                         <textarea
-                                            name="contact_message"
-                                            id="contact_message"
+                                            name="message"
+                                            id="message"
                                             {...register("massage", { required: "Massage is required." })}
                                         >
                                         </textarea>
@@ -159,7 +154,7 @@ const Contact = () => {
                                 <div className="col-lg-12">
                                     <button name="submit" type="submit" id="submit" className="contact_btn">
                                         <span>SEND MESSAGE</span>
-                                        <i class="fas fa-arrow-right"></i>
+                                        <i className="fas fa-arrow-right"></i>
                                     </button>
                                 </div>
 
