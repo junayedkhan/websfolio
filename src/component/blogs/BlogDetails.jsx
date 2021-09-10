@@ -2,7 +2,9 @@ import React from 'react'
 import img from "../../assets/image/blog-01.jpg"
 import Comment from './Comment'
  
-const BlogDetails = ({setopenModel}) => {
+const BlogDetails = ({setopenModel, blog}) => {
+
+    console.log(blog)
     return (
         <>
 
@@ -10,7 +12,7 @@ const BlogDetails = ({setopenModel}) => {
         <section className="react_model_inner">
 
             {/* == button area start */}
-            <button onClick={() => setopenModel(false)} className="react_model_close"><i class="fas fa-times"></i></button>
+            <button onClick={() => setopenModel(false)} className="react_model_close"><i className="fas fa-times"></i></button>
             {/* == button area end */}
 
             <div className="blog_details">
@@ -18,14 +20,14 @@ const BlogDetails = ({setopenModel}) => {
                 {/* == image area start */}
                 <div className="thumbnail">
                     <div className="inner">
-                        <img src={img} alt="blog" />
+                        <img src={blog.img} alt="blog" />
                     </div>
                 </div>
                 {/* == imgage area end */}
 
                 <div className="details">
                     <p className="meta">20 MAY 2021 - 10.30 PM</p>
-                    <h3 className="title">App Design Development.</h3>
+                    <h3 className="title">{blog.title}</h3>
                 </div>
 
                 {/* == test area start == */}

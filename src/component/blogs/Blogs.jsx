@@ -6,6 +6,9 @@ import BlogDetails from './BlogDetails'
 const Blogs = () => {
 
     const [openModel, setopenModel] = useState(false)
+    const [blog, setBlog] = useState([])
+
+    console.log(blog)
 
     return (
         <>
@@ -31,7 +34,12 @@ const Blogs = () => {
 
                                     {/* == image area start == */}
                                     <div className="card_thumbnail">
-                                        <img onClick={() => setopenModel(true)} src={val.img} alt="blog" />
+                                        <img onClick={() => {
+                                            setopenModel(true)
+                                            setBlog(val)
+                                        }}
+                                        src={val.img}
+                                        alt="blog" />
                                     </div>
                                     {/* == image area end == */}
 
@@ -41,7 +49,11 @@ const Blogs = () => {
                                             <p className="category_list">{val.category}</p>
                                             <p className="meta">{val.meta}</p>
                                         </div>
-                                        <h4 className="title" onClick={() => setopenModel(true)}>
+                                        <h4 className="title"
+                                         onClick={() => {
+                                            setopenModel(true)
+                                            setBlog(val)
+                                        }}>
                                             {val.title} 
                                         </h4>
                                     </div>
@@ -61,7 +73,7 @@ const Blogs = () => {
         {/* == blog details area start */}
         <section className={openModel ? "react_model" : "d-none"}>
             {openModel ? <div onClick={() => setopenModel(false)} className="react_model overlay"></div> : null}
-            <BlogDetails setopenModel={setopenModel}/>
+            <BlogDetails setopenModel={setopenModel} blog={blog}/>
         </section>
         {/* == blog details area end == */}
         </>
