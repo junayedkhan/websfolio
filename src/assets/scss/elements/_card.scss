@@ -96,6 +96,10 @@ body.dark .card{
 
         .title{
             color: $color_lightn;
+
+            &:hover{
+                color: $color_primary;
+            }
         }
     }
 }

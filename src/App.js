@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <button
-        className="dark_and_light"
+        className="dark_and_light_btn"
         onClick={() => setDarkMode(!darkMode)}
       >
         {darkMode ?

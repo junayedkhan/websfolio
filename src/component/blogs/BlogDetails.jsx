@@ -5,21 +5,30 @@ import Comment from './Comment'
 const BlogDetails = ({setopenModel}) => {
     return (
         <>
+
+        {/* == blog details area start */}
         <section className="react_model_inner">
+
+            {/* == button area start */}
             <button onClick={() => setopenModel(false)} className="react_model_close"><i class="fas fa-times"></i></button>
+            {/* == button area end */}
+
             <div className="blog_details">
 
+                {/* == image area start */}
                 <div className="thumbnail">
                     <div className="inner">
                         <img src={img} alt="blog" />
                     </div>
                 </div>
+                {/* == imgage area end */}
 
                 <div className="details">
                     <p className="meta">20 MAY 2021 - 10.30 PM</p>
                     <h3 className="title">App Design Development.</h3>
                 </div>
 
+                {/* == test area start == */}
                 <div className="main_content">
                     <div className="description">
                         <p className="bigger">
@@ -47,11 +56,16 @@ const BlogDetails = ({setopenModel}) => {
                         </p>
                     </div>
                 </div>
+                {/* == test area end == */}
 
+                {/* == comment area start == */}
                 <Comment />
+                {/* == comment area end == */}
 
             </div>
         </section> 
+        {/* == blog details area end == */}
+
         </>
     )
 }

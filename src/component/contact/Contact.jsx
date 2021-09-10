@@ -31,35 +31,51 @@ const Contact = () => {
     return (
         <>
         <section className="contact">
+
+            {/* == title area start */}
             <Title
                 title_bg="withme"
                 text_1="con"
                 text_2="tact"
             />
+            {/* == title area end */}
 
             <div className="container">
                 <div className="row">
+
+                    {/* == contact about area start */}
                     <div className="col-lg-5 col-12 _mb_50">
                         <div className="contact_about_area">
+
+                            {/* == image area start == */}
                             <div className="thumbnail">
                                 <img src={img} alt="contact" />
                             </div>
+                            {/* == imgage area end == */}
+
+                            {/* == autor area start */}
                             <div className="title_area">
                                 <h4 className="title">Nevine Acotanza</h4>
                                 <span>Chief Operating Officer</span>
                             </div>
+                            {/* == autor area end == */}
+
+                            {/* == number, email area start */}
                             <div className="description">
                                 <p>I am available for freelance work. Connect with me via and call in to my account.</p>
                                 <span className="phone">Phone: <a href="tel:00000000000">+01234567890</a></span>
                                 <span className="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
                             </div>
+                            {/* == number, email area end == */}
+
+                            {/* == social area start */}
                             <div className="social_share">
                                 <span className="title">find with me</span>
                                 <ul className="social_share_inner d-flex">
                                     {social_share.map((val, index) => {
                                         return(
                                         <li key={index}>
-                                            <a href={val.link} target="blank" className="social_icon">
+                                            <a href={`${val.link}`} target="blank" className="social_icon">
                                                 <i class={val.iconName}></i>
                                             </a>
                                         </li>
@@ -67,8 +83,13 @@ const Contact = () => {
                                     })}
                                 </ul>
                             </div>
+                            {/* social area end */}
+
                         </div>
                     </div>
+                    {/* == contact about area end */}
+
+                    {/* == from start == */}
                     <div className="col-lg-7 col-12">
                         <div className="contact_form_wrapper">
 
@@ -161,6 +182,8 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
+                    {/* == from end == */}
+
                 </div>
             </div>
 
