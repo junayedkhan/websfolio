@@ -1,7 +1,8 @@
 import React from 'react';
 import img from "../../assets/image/portfolio-01.jpg"
 
-const PortfolioDetails = ({setopenModel}) => {
+const PortfolioDetails = ({setopenModel, data}) => {
+
     return (
         <>
         <section className="react_model_inner">
@@ -12,19 +13,19 @@ const PortfolioDetails = ({setopenModel}) => {
     
                     <div className="porfolio_details_thumbnail">
                         <div className="inner">
-                            <img src={img} alt="portfolio" />
+                            <img src={data.img} alt={data.alt} />
                         </div>
                     </div>
 
                     <div className="text_content">
                         <div className="inner">
-                            <span className="subtitle">Featured - Design</span>
-                            <h3 className="title">App Design Development.</h3>
+                            <span className="subtitle">{data.tag}</span>
+                            <h3 className="title">{data.title}</h3>
                             <p className="description_1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.
+                               {data.description_1}
                             </p>
                             <p className="description_2">
-                                Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                {data.description_2}
                             </p>
                         </div>
                     </div>

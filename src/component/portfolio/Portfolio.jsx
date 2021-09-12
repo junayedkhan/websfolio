@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import Title from '../Title'
 import { portfolio } from './PortfolioData';
-import { Link } from 'react-router-dom';
 import PortfolioDetails from './PortfolioDetails';
 
 
 const Portfolio = () => {
 	const [tag, setTag] = useState('all');
 	const [filtered, setFiltered] = useState([]);
+    const [data, setData] = useState([])
     const [openModel, setopenModel] = useState(false)
 
 	useEffect(
@@ -42,14 +42,25 @@ const Portfolio = () => {
                             <div className="card">
                                 <div className="inner">
                                     <div className="card_thumbnail">
-                                        <img src={val.img} alt={val.alt} onClick={() => setopenModel(true)} />
+                                        <img src={val.img} alt={val.alt}
+                                        onClick={() => {
+                                            setopenModel(true)
+                                            setData(val)
+                                        }}
+                                        />
                                     </div>
                                     <div className="card_content">
                                         <div className="category_info">
                                             <p className="category_list">{val.tag}</p>
                                             <p className="meta"><i class="fas fa-heart"></i> {val.meta}</p>
                                         </div>
-                                        <h4 className="title" onClick={() => setopenModel(true)}>{val.title}</h4>
+                                        <h4 className="title"
+                                        onClick={() => {
+                                            setopenModel(true)
+                                            setData(val)
+                                        }}>
+                                        {val.title}
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +74,7 @@ const Portfolio = () => {
 
         <section className={openModel ? "react_model" : "d-none"}>
             {openModel ? <div onClick={() => setopenModel(false)} className="react_model overlay"></div> : null}
-            <PortfolioDetails setopenModel={setopenModel}/>
+            <PortfolioDetails data={data} setopenModel={setopenModel}/>
         </section>
         </>
 	);
