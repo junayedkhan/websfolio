@@ -16,7 +16,7 @@
     align-items: center;
     font-size: 25px;
     color: $color_primary;
-    transition: $transition;
+    @include transition;
 
     &:hover{
         background: $gradient_red_hover;
@@ -51,11 +51,12 @@
     box-shadow: none;
     background: #ced2d5;
     border-radius: 50%;
-    transition: $transition;
+    @include transition;
 
-&::before{
-    display: none;
-}
+
+    &::before{
+        display: none;
+    }
 }
 
 .slick-dots li.slick-active button {

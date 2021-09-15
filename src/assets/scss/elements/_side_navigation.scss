@@ -25,8 +25,8 @@
         color: $color_tertiary;
         font-size: $font_size_b1;
         cursor: pointer;
-        transition: $transition;
-        position: relative;     
+        position: relative; 
+        @include transition;
 
         .tooltiptext {
             visibility: hidden;
@@ -48,7 +48,6 @@
         }
         
         &:hover{
-
             background: $gradient_red_hover;
             color: $color_white;
 
@@ -85,9 +84,8 @@
         width: 30px;
         height: 5px;
         margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
         background-color: $color_tertiary;
+        @include transition;
     }
 }
 

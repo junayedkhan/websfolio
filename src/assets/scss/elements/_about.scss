@@ -30,10 +30,10 @@
                 font-weight: $p_medium;
                 outline: none;
                 border: 0 none;
-                transition: $transition;
                 background: transparent;
                 border-radius: 10px;
                 cursor: pointer;
+                @include transition;
 
                 &:hover{
                     color: $color_primary;
@@ -155,8 +155,8 @@
                         padding: 45px 25px 30px;
                         border-radius: 10px;
                         margin-top: 50px;
-                        transition: $transition !important;
                         position: relative;
+                        @include transition;
 
                         @media #{$large_mobile} {
                             padding: 45px 20px 25px;

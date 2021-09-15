@@ -32,9 +32,9 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             border-radius: 6px;
-            transition: $transition;
             background: $gradient_box_w;
             box-shadow: $shadow_white_3;
+            @include transition;
 
             &:hover{
                 transform: translateY(-3px);
