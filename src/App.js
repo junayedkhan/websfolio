@@ -28,6 +28,7 @@ function App() {
 
   return (
     <>
+      {/* == dark mode button start */}
       <button
         className="dark_and_light_btn"
         onClick={() => setDarkMode(!darkMode)}
@@ -36,6 +37,9 @@ function App() {
         (<i className="fas fa-sun" style={{color: "#c4cfde"}}></i>) :
         (<i className="fas fa-moon" style={{color: "#212428"}}></i>)}
       </button>
+      {/* == dark mode button end */}
+
+      {/* == all route == */}
       <Router />
     </>
   );
