@@ -1,8 +1,10 @@
-import img_03 from "../../assets/image/img_03.jpg"
-import img_04 from "../../assets/image/img_04.jpg"
-import img_05 from "../../assets/image/img_05.jpg"
-import img_06 from "../../assets/image/img_06.jpg"
+// == testimonial image == //
+import img_01 from "../../assets/image/testimonial-01.jpg"
+import img_02 from "../../assets/image/testimonial-02.jpg"
+import img_03 from "../../assets/image/testimonial-03.jpg"
+import img_04 from "../../assets/image/testimonial-04.jpg"
 
+// == client image == //
 import brand_01 from "../../assets/image/1.png"
 import brand_02 from "../../assets/image/2.png"
 import brand_03 from "../../assets/image/3.png"
@@ -153,7 +155,7 @@ export const experience_right = [
 // ======= testimonial ======= //
 export const testimonial = [
     {
-        img: img_03,
+        img: img_01,
         alt: "testmonial_image",
         subtitle: "rainbow-themes",
         name: "nevine acotanza",
@@ -163,7 +165,7 @@ export const testimonial = [
         description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     },
     {
-        img: img_04,
+        img: img_02,
         alt: "testmonial_image",
         subtitle: "bound - trolola",
         name: "jone duone doe",
@@ -173,7 +175,7 @@ export const testimonial = [
         description: "Important fact to nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     },
     {
-        img: img_05,
+        img: img_03,
         alt: "testmonial_image",
         subtitle: "Glassfisom",
         name: "Nevine Dhawan",
@@ -183,7 +185,7 @@ export const testimonial = [
         description: "No more question for design. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     },
     {
-        img: img_06,
+        img: img_04,
         alt: "testmonial_image",
         subtitle: "NCD - Design",
         name: "Mevine Thoda",
