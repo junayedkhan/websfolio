@@ -165,32 +165,32 @@ export const testimonial = [
     {
         img: img_04,
         alt: "testmonial_image",
-        subtitle: "rainbow-themes",
-        name: "nevine acotanza",
-        designation: "chief operating officer",
-        title: "android app development",
-        date: "vai Upwork - Mar 4, 2015 - Aug 30, 2021",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
+        subtitle: "bound - trolola",
+        name: "jone duone doe",
+        designation: "operating officer",
+        title: "web App Development",
+        date: "Upwork - Mar 4, 2016 - Aug 30, 2021",
+        description: "Important fact to nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     },
     {
         img: img_05,
         alt: "testmonial_image",
-        subtitle: "rainbow-themes",
-        name: "nevine acotanza",
-        designation: "chief operating officer",
-        title: "android app development",
-        date: "vai Upwork - Mar 4, 2015 - Aug 30, 2021",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
+        subtitle: "Glassfisom",
+        name: "Nevine Dhawan",
+        designation: "CEO Of Officer",
+        title: "Android App Design",
+        date: "Fiver - Mar 4, 2015 - Aug 30, 2021",
+        description: "No more question for design. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     },
     {
         img: img_06,
         alt: "testmonial_image",
-        subtitle: "rainbow-themes",
-        name: "nevine acotanza",
-        designation: "chief operating officer",
-        title: "android app development",
-        date: "vai Upwork - Mar 4, 2015 - Aug 30, 2021",
-        description: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
+        subtitle: "NCD - Design",
+        name: "Mevine Thoda",
+        designation: "Marketing Officer",
+        title: "CEO - Marketing",
+        date: "Thoda Department - Mar 4, 2018 - Aug 30, 2021",
+        description: "Marcent Of Vanice and treatment. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
     }
 ]
 

@@ -13,7 +13,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "webdesign",
         meta: "600",
-        title: "the service provide for design",
+        title: "The services provide for design",
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!"
     },
@@ -23,7 +23,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "webdesign",
         meta: "500",
-        title: "the service provide for design",
+        title: "Mobile app landing design & app maintain",
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!" 
     },
@@ -33,7 +33,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "photoshop",
         meta: "400",
-        title: "the service provide for design" ,
+        title: "Logo design creativity & Application" ,
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!"
     },
@@ -43,7 +43,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "devolapment",
         meta: "350",
-        title: "the service provide for design",
+        title: "Mobile app landing design & Services",
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!"
     },
@@ -53,7 +53,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "photoshop",
         meta: "200",
-        title: "the service provide for design",
+        title: "App for tecnology & services",
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!"
     },
@@ -63,7 +63,7 @@ export const portfolio = [
         alt: "portfolio",
         tag: "webdesign",
         meta: "500",
-        title: "the service provide for design",
+        title: "Design for tecnology & services",
         description_1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi",
         description_2: "Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!" 
     },

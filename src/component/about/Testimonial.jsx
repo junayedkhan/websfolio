@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {testimonial} from "./AboutData"
 import Slider from "react-slick";
-import Skeleton from 'react-loading-skeleton'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 
@@ -11,6 +10,7 @@ const Testimonial = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        lazyLoad: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         nextArrow: <SampleNextArrow />,
