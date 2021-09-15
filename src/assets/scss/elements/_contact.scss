@@ -134,20 +134,6 @@
 }
 
 
-// ===== sweet alert ===== //
-.alert{
-    background: #fff;
-
-    .alert_btn{
-        @include button;
-        background: #fff;
-        padding: 6px 24px;
-    }
-    
-}
-
-
-
 
 // ===== dark mode ===== //
 body.dark .contact{
