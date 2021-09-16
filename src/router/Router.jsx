@@ -10,7 +10,7 @@ import Contact from '../component/contact/Contact'
 
 const Router = () => {
     return (
-        <section className="websfolio_th">
+    <section className="websfolio_th">
         <Navbar />
         <Switch>
             <Route exact path="/" component={Home} />
@@ -19,8 +19,8 @@ const Router = () => {
             <Route exact path="/blogs" component={Blogs} />
             <Route exact path="/contact" component={Contact} />
         </Switch>
-        </section>
+    </section>
     )
 }
 
-export default Router
+export default Router;

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Title from '../Title'
 import { portfolio } from './PortfolioData';
@@ -18,29 +17,45 @@ const Portfolio = () => {
 		[tag]
 	);
 
+    const TagButton = ({ name, handleSetTag, tagActive }) => {
+        return (
+            <button className={`tag ${tagActive ? 'active' : null}`} onClick={() => handleSetTag(name)}>
+                {name.toUpperCase()}
+            </button>
+        );
+    };
+
 	return (
         <>
+        {/* == title == */}
         <Title
             title_bg="works"
             text_1="my"
             text_2="portfolio"
         />
 
+        {/* == portfolio area start == */}
         <section className="portfolio">
             <div className="container">
+
+                {/* == portfolio navigation area start == */}
                 <div className="portfolio_tags">
                     <TagButton name="all" tagActive={tag === 'all' ? true : false} handleSetTag={setTag} />
                     <TagButton name="webdesign" tagActive={tag === 'webdesign' ? true : false} handleSetTag={setTag} />
                     <TagButton name="devolapment" tagActive={tag === 'devolapment' ? true : false} handleSetTag={setTag} />
                     <TagButton name="photoshop" tagActive={tag === 'photoshop' ? true : false} handleSetTag={setTag} />
                 </div>
-
+                {/* == portfolio navigation area end == */}
+                
+                {/* == portfolio card area start == */}
                 <div className="row">
                     {filtered.map((val, index) => {
                         return(
                         <div className="col-lg-6 col-xl-4 col-md-6 col-12" key={index}>
                             <div className="card">
                                 <div className="inner">
+
+                                    {/* == thumbnail area start == */}
                                     <div className="card_thumbnail">
                                         <img src={val.img} alt={val.alt}
                                         onClick={() => {
@@ -49,6 +64,9 @@ const Portfolio = () => {
                                         }}
                                         />
                                     </div>
+                                    {/* == thumbnail area end == */}
+
+                                    {/* == text area start == */}
                                     <div className="card_content">
                                         <div className="category_info">
                                             <p className="category_list">{val.tag}</p>
@@ -62,30 +80,29 @@ const Portfolio = () => {
                                         {val.title}
                                         </h4>
                                     </div>
+                                    {/* == text area end == */}
+
                                 </div>
                             </div>
                         </div>
                         )
                     })}
                 </div>
+                {/* == portfolio card area end == */}
 
             </div>
         </section>
+        {/* == portfolio area end == */}
 
+        {/* == portfolio model area start == */}
         <section className={openModel ? "react_model" : "d-none"}>
             {openModel ? <div onClick={() => setopenModel(false)} className="react_model overlay"></div> : null}
             <PortfolioDetails data={data} setopenModel={setopenModel}/>
         </section>
+        {/* == portfolio model area end == */}
         </>
 	);
 }
 
 export default Portfolio;
 
-const TagButton = ({ name, handleSetTag, tagActive }) => {
-	return (
-		<button className={`tag ${tagActive ? 'active' : null}`} onClick={() => handleSetTag(name)}>
-			{name.toUpperCase()}
-		</button>
-	);
-};

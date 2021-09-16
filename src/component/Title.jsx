@@ -3,7 +3,6 @@ import React from 'react'
 const Title = ({title_bg, text_1, text_2}) => {
 
     return (
-
         <>
         <div className="title_section">
             <span className="title_bg" >{title_bg}</span>

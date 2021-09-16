@@ -43,6 +43,7 @@ const Clients = () => {
     return (
         <>
         <section className="client_area">
+            {/* == single client area start == */}
             <Slider {...settings} className="client_slider">
                 {clients.map((val, index) => {
                     return(
@@ -59,6 +60,7 @@ const Clients = () => {
                     )
                 })}
             </Slider>
+            {/* == single client area end == */}
         </section>
         </>
     )

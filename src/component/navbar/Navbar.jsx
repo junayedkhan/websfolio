@@ -18,6 +18,7 @@ const Navbar = () => {
     return (
         
         <>
+            {/* == mobile nev button == */}
             <button className={isOpen === false ? 
                 "hamburger" : "hamburger active"}
                 onClick={openMenu}
@@ -27,6 +28,7 @@ const Navbar = () => {
                 <span className="bar"></span>
             </button>
 
+            {/* == navlink area start == */}
             <ul className={isOpen === false ? "nav_menu" : "nav_menu active" }>
 
                 {nav_link.map((val, index) => {
@@ -41,6 +43,7 @@ const Navbar = () => {
                 })}
 
             </ul>
+            {/* == navlink area end == */}
         </>
     )
 }

@@ -8,8 +8,6 @@ const Blogs = () => {
     const [openModel, setopenModel] = useState(false)
     const [blog, setBlog] = useState([])
 
-    console.log(blog)
-
     return (
         <>
 
@@ -70,12 +68,12 @@ const Blogs = () => {
         </section>
         {/* == blog area end == */}
 
-        {/* == blog details area start */}
+        {/* == blog details model area start */}
         <section className={openModel ? "react_model" : "d-none"}>
             {openModel ? <div onClick={() => setopenModel(false)} className="react_model overlay"></div> : null}
             <BlogDetails setopenModel={setopenModel} blog={blog}/>
         </section>
-        {/* == blog details area end == */}
+        {/* == blog details model area end == */}
         </>
     )
 }

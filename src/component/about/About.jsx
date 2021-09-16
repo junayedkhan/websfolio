@@ -5,8 +5,8 @@ import Clients from './Clients';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {
         tab_list,
-        personal_info_1,
-        personal_info_2,
+        personal_info_left,
+        personal_info_right,
         stats_box,
         educational_quality,
         Job_Experience,
@@ -22,6 +22,7 @@ const About = () => {
 
     return (
         <>
+        {/* == resume area start == */}
         <section className="about">
 
             <Title
@@ -32,8 +33,10 @@ const About = () => {
 
             <div className="container">
 
+                   {/* == tab content wrapper area start == */}
                     <Tabs className="tab_inner">
 
+                        {/* == tab list area start == */}
                         <TabList className="tablist">
                             <div className="row">
                                 {tab_list.map((val, index) => {
@@ -47,7 +50,9 @@ const About = () => {
                                 })}
                             </div>
                         </TabList>
+                        {/* == tab list area end == */}
 
+                        {/* == personal info tab area start == */}
                         <TabPanel className="personal_info">
                             <div className="row">
                                 <div className="col-12 col-lg-5 _mb_60">
@@ -56,7 +61,9 @@ const About = () => {
                                         <div className="col-6">
                                             <div className="inner">
                                                 <ul className="inner_list">
-                                                    {personal_info_1.map((val, index) => {
+
+                                                    {/* personal info left side */}
+                                                    {personal_info_left.map((val, index) => {
                                                         return(
                                                         <li className="list_item" key={index}>
                                                             <span className="title">{val.title}: </span>
@@ -64,13 +71,16 @@ const About = () => {
                                                         </li>
                                                         )
                                                     })}
+
                                                 </ul>
                                             </div>
                                         </div>
                                         <div className="col-6">
                                             <div className="inner">
                                                 <ul className="inner_list">
-                                                    {personal_info_2.map((val, index) => {
+
+                                                    {/* == personal info right side == */}
+                                                    {personal_info_right.map((val, index) => {
                                                         return(
                                                         <li className="list_item" key={index}>
                                                             <span className="title">{val.title}: </span>
@@ -78,11 +88,14 @@ const About = () => {
                                                         </li>
                                                         )
                                                     })}
+
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                {/* == status box area start == */}
                                 <div className="col-12 col-lg-7">
                                     <div className="row">
                                         {stats_box.map((val, index) => {
@@ -100,166 +113,213 @@ const About = () => {
                                         })}
                                     </div>
                                 </div>
+                                {/* == status box area end == */}
+
                             </div>
                         </TabPanel>
+                        {/* == personal info tab area end == */}
 
+                        {/* == education tab area start ==  */}
                         <TabPanel className="education">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-12 col-12 _mb_60">
-                                        <div className="inner">
-                                            <span className="subtitle">2008 - 2015</span>
-                                            <h3 className="main_title">educational quality</h3>
-                                            <div className="inner_list">
-                                                {educational_quality.map((val, index) => {
-                                                    return(
-                                                    <div className="item" key={index}>
-                                                        <div className="heading">
-                                                            <div className="title">
-                                                                <h4>{val.title}</h4>
-                                                                <span>{val.subtitle}</span>
-                                                            </div>
-                                                            <div className="date_of_time">
-                                                                <span>{val.date_of_time}</span>
-                                                            </div>
+                            <div className="row">
+                                
+                                {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-12 col-12 _mb_60">
+                                    <div className="inner">
+                                        <span className="subtitle">2008 - 2015</span>
+                                        <h3 className="main_title">educational quality</h3>
+                                
+                                        <div className="inner_list">
+                                            {educational_quality.map((val, index) => {
+                                                return(
+                                                <div className="item" key={index}>
+                                                    <div className="heading">
+                                                        <div className="title">
+                                                            <h4>{val.title}</h4>
+                                                            <span>{val.subtitle}</span>
                                                         </div>
-                                                        <p className="description">{val.description}</p>
-                                                    </div>
-                                                    )
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-12">
-                                        <div className="inner">
-                                            <span className="subtitle">2008 - 2015</span>
-                                            <h3 className="main_title">Job Experience</h3>
-                                            <div className="inner_list">
-                                                {Job_Experience.map((val, index) => {
-                                                    return(
-                                                    <div className="item" key={index}>
-                                                        <div className="heading">
-                                                            <div className="title">
-                                                                <h4>{val.title}</h4>
-                                                                <span>{val.subtitle}</span>
-                                                            </div>
-                                                            <div className="date_of_time">
-                                                                <span>{val.date_of_time}</span>
-                                                            </div>
+                                                        <div className="date_of_time">
+                                                            <span>{val.date_of_time}</span>
                                                         </div>
-                                                        <p className="description">{val.description}</p>
                                                     </div>
-                                                    )
-                                                })}
-                                            </div>
+                                                        <p className="description">{val.description}</p>
+                                                </div>
+                                                )
+                                            })}
                                         </div>
+                                        
                                     </div>
                                 </div>
-                        </TabPanel>
+                                {/* == single list area end == */}
+                                
+                                {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-12 col-12">
+                                    <div className="inner">
+                                        <span className="subtitle">2008 - 2015</span>
+                                        <h3 className="main_title">Job Experience</h3>
+                                        
+                                        <div className="inner_list">
+                                            {Job_Experience.map((val, index) => {
+                                                return(
+                                                <div className="item" key={index}>
+                                                    <div className="heading">
+                                                        <div className="title">
+                                                            <h4>{val.title}</h4>
+                                                            <span>{val.subtitle}</span>
+                                                        </div>
+                                                        <div className="date_of_time">
+                                                            <span>{val.date_of_time}</span>
+                                                        </div>
+                                                    </div>
+                                                    <p className="description">{val.description}</p>
+                                                </div>
+                                                )
+                                            })}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                {/* == single list area end == */}
 
+                            </div>
+                        </TabPanel>
+                        {/* == education tab area end == */}
+
+                        {/* == skill tab area start == */}
                         <TabPanel className="skill">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-6 col-12 _mb_60">
-                                        <div className="inner">
-                                            <span className="subtitle">features</span>
-                                            <h4 className="main_title">design skill</h4>
-                                            <div className="skill_charts">
-                                                {skill_left.map((val, index) => {
-                                                    return(
-                                                    <div className="skill_charts_inner" key={index}>
-                                                        <div className="heading">
-                                                            <h6 className="lavel">{val.lavel}</h6>
-                                                            <h6 className="number">{val.number}</h6>
-                                                        </div>
-                                                        <div className="progress_bar">
-                                                            <div className="progress_bar_inner" style={{width: val.number}}></div>
-                                                        </div>
-                                                    </div>
-                                                    )
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-12">
-                                        <div className="inner">
-                                            <span className="subtitle">features</span>
-                                            <h4 className="main_title">Development Skill</h4>
-                                            <div className="skill_charts">
-                                                {skill_right.map((val, index) => {
-                                                    return(
-                                                    <div className="skill_charts_inner" key={index}>
-                                                        <div className="heading">
-                                                            <h6 className="lavel">{val.lavel}</h6>
-                                                            <h6 className="number">{val.number}</h6>
-                                                        </div>
-                                                        <div className="progress_bar">
-                                                            <div className="progress_bar_inner" style={{width: val.number}}></div>
-                                                        </div>
-                                                    </div>
-                                                    )
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </TabPanel>
+                            <div className="row">
 
-                        <TabPanel className="experience">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-12 col-12 _mb_60">
-                                        <div className="inner">
-                                            <span className="subtitle">2008 - 2015</span>
-                                            <h3 className="main_title">educational quality</h3>
-                                            <div className="inner_list">
-                                                {experience_left.map((val, index) => {
-                                                    return(
-                                                    <div className="item" key={index}>
-                                                        <div className="heading">
-                                                            <div className="title">
-                                                                <h4>{val.title}</h4>
-                                                                <span>{val.subtitle}</span>
-                                                            </div>
-                                                            <div className="date_of_time">
-                                                                <span>{val.date_of_time}</span>
-                                                            </div>
-                                                        </div>
-                                                        <p className="description">{val.description}</p>
+                                {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-6 col-12 _mb_60">
+                                    <div className="inner">
+                                        <span className="subtitle">features</span>
+                                        <h4 className="main_title">design skill</h4>
+                                        
+                                        <div className="skill_charts">
+                                            {skill_left.map((val, index) => {
+                                                return(
+                                                <div className="skill_charts_inner" key={index}>
+                                                    <div className="heading">
+                                                        <h6 className="lavel">{val.lavel}</h6>
+                                                        <h6 className="number">{val.number}</h6>
                                                     </div>
-                                                    )
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-12">
-                                        <div className="inner">
-                                            <span className="subtitle">2008 - 2015</span>
-                                            <h3 className="main_title">Job Experience</h3>
-                                            <div className="inner_list">
-                                                {experience_right.map((val, index) => {
-                                                    return(
-                                                    <div className="item" key={index}>
-                                                        <div className="heading">
-                                                            <div className="title">
-                                                                <h4>{val.title}</h4>
-                                                                <span>{val.subtitle}</span>
-                                                            </div>
-                                                            <div className="date_of_time">
-                                                                <span>{val.date_of_time}</span>
-                                                            </div>
-                                                        </div>
-                                                        <p className="description">{val.description}</p>
+                                                    <div className="progress_bar">
+                                                        <div className="progress_bar_inner" style={{width: val.number}}></div>
                                                     </div>
-                                                    )
-                                                })}
-                                            </div>
+                                                </div>
+                                                )
+                                            })}
                                         </div>
+                                        
                                     </div>
                                 </div>
+                                {/* == single list area start == */}
+
+                                {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-6 col-12">
+                                    <div className="inner">
+                                        <span className="subtitle">features</span>
+                                        <h4 className="main_title">Development Skill</h4>
+                                        
+                                        <div className="skill_charts">
+                                            {skill_right.map((val, index) => {
+                                                return(
+                                                <div className="skill_charts_inner" key={index}>
+                                                    <div className="heading">
+                                                        <h6 className="lavel">{val.lavel}</h6>
+                                                        <h6 className="number">{val.number}</h6>
+                                                    </div>
+                                                    <div className="progress_bar">
+                                                        <div className="progress_bar_inner" style={{width: val.number}}></div>
+                                                    </div>
+                                                </div>
+                                                )
+                                            })}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                {/* == single list area start == */}
+
+                            </div>
                         </TabPanel>
+                        {/* == skill tab area end == */}
+
+                        {/* == experience tab area start ==  */}
+                        <TabPanel className="experience">
+                            <div className="row">
+
+                                {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-12 col-12 _mb_60">
+                                    <div className="inner">
+                                        <span className="subtitle">2008 - 2015</span>
+                                        <h3 className="main_title">educational quality</h3>
+                                        
+                                        <div className="inner_list">
+                                            {experience_left.map((val, index) => {
+                                                return(
+                                                <div className="item" key={index}>
+                                                    <div className="heading">
+                                                        <div className="title">
+                                                            <h4>{val.title}</h4>
+                                                            <span>{val.subtitle}</span>
+                                                        </div>
+                                                        <div className="date_of_time">
+                                                            <span>{val.date_of_time}</span>
+                                                        </div>
+                                                    </div>
+                                                        <p className="description">{val.description}</p>
+                                                </div>
+                                                )
+                                            })}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                               {/* == single list area end == */}
+
+                                
+                               {/* == single list area start == */}
+                                <div className="col-lg-6 col-md-12 col-12">
+                                    <div className="inner">
+                                        <span className="subtitle">2008 - 2015</span>
+                                        <h3 className="main_title">Job Experience</h3>
+                                        
+                                        <div className="inner_list">
+                                            {experience_right.map((val, index) => {
+                                                return(
+                                                <div className="item" key={index}>
+                                                    <div className="heading">
+                                                        <div className="title">
+                                                            <h4>{val.title}</h4>
+                                                            <span>{val.subtitle}</span>
+                                                        </div>
+                                                        <div className="date_of_time">
+                                                            <span>{val.date_of_time}</span>
+                                                        </div>
+                                                    </div>
+                                                    <p className="description">{val.description}</p>
+                                                </div>
+                                                )
+                                            })}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                {/* == single list area end == */}
+
+
+                            </div>
+                        </TabPanel>
+                        {/* == education tab area end == */}
                         
                     </Tabs>
+                    {/* == tab content wrapper area end == */}
             </div>
         </section>
-
+        {/* == resume area end */}
+        
+        {/* == testimonial area start == */}
         <section>
             <div className="container">
                 <Title
@@ -270,7 +330,9 @@ const About = () => {
                 <Testimonial />
             </div>
         </section>
+        {/* == testimonial area start == */}
 
+        {/* == client area start == */}
         <section>
             <div className="container">
                 <Title
@@ -281,6 +343,7 @@ const About = () => {
                 <Clients /> 
             </div>
         </section>
+        {/* == client area start == */}
         
         </>
     )

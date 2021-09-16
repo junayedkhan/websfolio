@@ -16,7 +16,7 @@ const Comment = () => {
             <div className="inner">
                 <h3 className="title">leave a replay</h3>
 
-                {/* == from area start */}
+                {/* == from area start == */}
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-12">
@@ -88,11 +88,11 @@ const Comment = () => {
                     </div>
                 </form>
             </div>
-            {/* == from area end */}
+            {/* == from area end == */}
 
         </div>            
         </>
     )
 }
 
-export default Comment
+export default Comment;

@@ -21,7 +21,7 @@ export const tab_list = [
 ]
 
 // ====== personal info ====== //
-export const personal_info_1 = [
+export const personal_info_left = [
     {title: "fast name", value: "jone"},
     {title: "last name", value: "jone"},
     {title: "age", value: "25"},
@@ -31,7 +31,7 @@ export const personal_info_1 = [
 ]
 
 // ====== personal info ====== //
-export const personal_info_2 = [
+export const personal_info_right = [
     {title: "address", value: "usa"},
     {title: "phone", value: "+2162118455"},
     {title: "email", value: "jonelee@gmail.com"},

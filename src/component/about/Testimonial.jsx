@@ -43,12 +43,14 @@ const Testimonial = () => {
 
     return (
         <>
+        {/* == single testimonial area start == */}
         <Slider {...settings} className="testimonial">
 
             {testimonial.map((val, index) => {
                 return(
                 <div className="inner" key={index}>
                     <div className="row">
+                        {/* == info area start == */}
                         <div className="col-12">
                             <div className="card_info">
                                 <div className="card_img">
@@ -61,6 +63,9 @@ const Testimonial = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* == info area end == */}
+
+                        {/* == description area start == */}
                         <div className="col-12">
                             <div className="card_description">
                                 <div className="title_area">
@@ -69,16 +74,18 @@ const Testimonial = () => {
                                         <span className="date">{val.date}</span>
                                     </div>
                                 </div>
-                                <p className="description">
-                                    {val.description}
-                                </p>
+                                <p className="description">{val.description}</p>
                             </div>
                         </div>
+                        {/* == description area start == */}
+
                     </div>
                 </div>
                 )
             })}
+
         </Slider>
+        {/* == single testimonial area end == */}
         </>
     )
 }

@@ -29,35 +29,23 @@ const BlogDetails = ({setopenModel, blog}) => {
                     <h3 className="title">{blog.title}</h3>
                 </div>
 
-                {/* == test area start == */}
+                {/* == text area start == */}
                 <div className="main_content">
                     <div className="description">
-                        <p className="bigger">
-                            {blog.designation_01}
-                        </p>
-                        <p>
-                            {blog.description_01}
-                        </p>
-                        <p>
-                        {blog.description_02}
-                        </p>
+                        <p className="bigger">{blog.designation_01}</p>
+                        <p>{blog.description_01}</p>
+                        <p>{blog.description_02}</p>
                         <div className="quote_box">
                             <div className="icon">
                                 <i className="fas fa-quote-left"></i>
                             </div>
-                            <p>
-                            {blog.designation_02}
-                            </p>
+                            <p>{blog.designation_02}</p>
                         </div>
-                        <p>
-                        {blog.description_03}
-                        </p>
-                        <p>
-                        {blog.description_04}
-                        </p>
+                        <p>{blog.description_03}</p>
+                        <p>{blog.description_04}</p>
                     </div>
                 </div>
-                {/* == test area end == */}
+                {/* == text area end == */}
 
                 {/* == comment area start == */}
                 <Comment />
