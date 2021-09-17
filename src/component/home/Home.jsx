@@ -1,5 +1,4 @@
 import React from 'react'
-import img from "../../assets/image/banner-04.jpg"
 
 const Home = () => {
 
@@ -68,7 +67,7 @@ const Home = () => {
                     {/* == home thumbnail area start == */}
                     <div className="col-lg-5 col-md-12 col-12 order-1 order-lg-2">
                         <div className="home_thumbnail">
-                            <div className="inner" style={{backgroundImage: `url(${img})`}}></div>
+                            <div className="inner" style={{backgroundImage: "url(assets/image/home_01.jpg)"}}></div>
                         </div>
                     </div>
                     {/* == home thumbnail area end == */}
