@@ -8,12 +8,9 @@
     color: $color_heading_wv;
 
     @media #{$large_mobile} {
-        font-size: 30px;
+        font-size: 26px;
     }
 
-    @media #{$small_mobile} {
-        font-size: 25px;
-    }
 }
 
 //  == tiltle == //
@@ -26,7 +23,7 @@
     text-transform: capitalize;
 
     @media #{$large_mobile} {
-        font-size: 22px;
+        font-size: 23px;
     }
 }
 

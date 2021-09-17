@@ -7,8 +7,8 @@
     box-shadow: $shadow_white_3;
     position: relative;
     z-index: 1;
+    height: 100%;
     display: inline-block;
-    margin-bottom: 25px;
     border: none;
     @include transition;
 

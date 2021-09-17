@@ -1,5 +1,4 @@
 import React from 'react';
-import img from "../../assets/image/portfolio-01.jpg"
 
 const PortfolioDetails = ({setopenModel, data}) => {
 
