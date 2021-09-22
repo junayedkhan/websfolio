@@ -99,6 +99,10 @@
 // ===== dark mode ===== //
 body.dark{
 
+    .portfolio{
+        background: $background_color_2;
+    }
+
     .portfolio .portfolio_tags{
 
         .tag{

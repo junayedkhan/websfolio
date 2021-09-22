@@ -24,7 +24,6 @@
         font-size: 110px;
         left: 0;
         letter-spacing: 10px;
-        line-height: 0.7;
         position: absolute;
         right: 0;
         top: 50%;
@@ -47,6 +46,7 @@
 
 // ===== dark mode ===== //
 body.dark .title_section {
+    background: $background_color_2;
 
     .title{
         color: $color_lightn;
