@@ -26,7 +26,7 @@ const Blogs = () => {
 
                     {blogsdata.map((val, index) => {
                         return(
-                        <div className="col-lg-6 col-xl-4 col-md-6 col-12 _mb_20" key={index}>
+                        <div className="col-lg-6 col-xl-4 col-md-6 col-12 _mb_20_" key={index}>
                             <div className="card">
                                 <div className="inner">
 

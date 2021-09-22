@@ -66,8 +66,13 @@ const Home = () => {
                     
                     {/* == home thumbnail area start == */}
                     <div className="col-lg-5 col-md-12 col-12 order-1 order-lg-2">
-                        <div className="home_thumbnail">
-                            <div className="inner" style={{backgroundImage: "url(assets/image/home_01.jpg)"}}></div>
+                        {/* <div className="home_thumbnail">
+                            <div className="inner" style={{backgroundImage: "url(assets/image/home-02.png)"}}></div>
+                        </div> */}
+                        <div className="thumbnail">
+                            <div className="inner">
+                                <img src="assets/image/home-02.png" alt="Personal Portfolio Images" />
+                            </div>
                         </div>
                     </div>
                     {/* == home thumbnail area end == */}
