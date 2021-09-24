@@ -2,7 +2,7 @@
 // == main title == //
 @mixin main_title {
     font-size: 31px;
-    font-weight: $s_bold;
+    font-weight: $p_bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $color_heading_wv;
@@ -90,7 +90,7 @@
 
 // == contact errors == //
 @mixin errors {
-    background: $color_primary;
+    background: $color_danger;
     color: $color_heading;
     text-align: center;
     border-radius: 6px;
@@ -109,7 +109,7 @@
         width: 13px;
         height: 13px;
         transform: rotate(45deg);
-        background: $color_primary;
+        background: $color_danger;
         position: absolute;
         bottom: -5px;
         right: 10px;

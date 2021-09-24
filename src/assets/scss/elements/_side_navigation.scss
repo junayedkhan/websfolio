@@ -13,14 +13,13 @@
     }
 
     .nav_link{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 15px 0;
         background: $gradient_box_w;
-        backdrop-filter: blur(15px) !important;
         border-radius: 50%;
         color: $color_tertiary;
         font-size: $font_size_b1;
@@ -43,7 +42,7 @@
             /* Position the tooltip */
             position: absolute;
             z-index: 1;
-            top: 10px;
+            top: 5px;
             right: 113%;
         }
         
@@ -64,10 +63,10 @@
 .hamburger {
     display: none;
     position: fixed;
-    right: 25px;
+    right: 18px;
     top: 20px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: $gradient_box_w;
     // box-shadow: $shadow_white_3;
     border-radius: 50%;
@@ -81,9 +80,9 @@
 
     .bar {
         display: block;
-        width: 30px;
+        width: 25px;
         height: 5px;
-        margin: 5px auto;
+        margin: 3px auto;
         background-color: $color_tertiary;
         @include transition;
     }
@@ -104,8 +103,8 @@
 
     .bar:nth-child(1) {
         background-color: $color_secondary;
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(11.2px) rotate(45deg);
+        -webkit-transform: translateY(8.2px) rotate(45deg);
+        transform: translateY(8.2px) rotate(45deg);
     }
 }
 
