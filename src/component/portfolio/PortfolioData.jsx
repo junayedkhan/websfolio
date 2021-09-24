@@ -1,3 +1,4 @@
+// == portfolio image == //
 import img01 from "../../assets/image/portfolio-01.jpg"
 import img02 from "../../assets/image/portfolio-02.jpg"
 import img03 from "../../assets/image/portfolio-03.jpg"
@@ -6,6 +7,7 @@ import img05 from "../../assets/image/portfolio-05.jpg"
 import img06 from "../../assets/image/portfolio-06.jpg"
 
 
+// == portfolio data == //
 export const portfolio = [
     {
         id: "1",

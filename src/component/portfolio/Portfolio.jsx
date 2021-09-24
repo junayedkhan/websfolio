@@ -27,15 +27,16 @@ const Portfolio = () => {
 
 	return (
         <>
-        {/* == title == */}
-        <Title
-            title_bg="works"
-            text_1="my"
-            text_2="portfolio"
-        />
-
-        {/* == portfolio area start == */}
         <section className="portfolio">
+
+            {/* == title == */}
+            <Title
+                title_bg="works"
+                text_1="my"
+                text_2="portfolio"
+            />
+            {/* == portfolio area start == */}
+
             <div className="container">
 
                 {/* == portfolio navigation area start == */}

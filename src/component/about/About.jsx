@@ -25,11 +25,13 @@ const About = () => {
         {/* == resume area start == */}
         <section className="about">
 
+            {/* == title area start == */}
             <Title
                 title_bg="resume"
                 text_1="about"
                 text_2="me"
             />
+            {/* == title area end */}
 
             <div className="container">
 
@@ -319,29 +321,41 @@ const About = () => {
         </section>
         {/* == resume area end */}
         
+        
         {/* == testimonial area start == */}
         <section>
+
+            {/* == title area start == */}
+            <Title
+                title_bg="CLIENT"
+                text_1="Testimo"
+                text_2="nial"
+            />
+            {/* == title area end == */}
+
             <div className="container">
-                <Title
-                    title_bg="CLIENT"
-                    text_1="Testimo"
-                    text_2="nial"
-                />
                 <Testimonial />
             </div>
+
         </section>
         {/* == testimonial area start == */}
 
+
         {/* == client area start == */}
         <section>
+
+            {/* == title area start == */}
+            <Title
+                title_bg="some"
+                text_1="Client"
+                text_2="s"
+            />
+            {/* == title area end == */}
+
             <div className="container">
-                <Title
-                    title_bg="some"
-                    text_1="Client"
-                    text_2="s"
-                />
                 <Clients /> 
             </div>
+
         </section>
         {/* == client area start == */}
         

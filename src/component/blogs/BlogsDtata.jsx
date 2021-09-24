@@ -1,8 +1,10 @@
+// == blog image == //
 import img_01 from "../../assets/image/blog-01.jpg";
 import img_02 from "../../assets/image/blog-02.jpg";
 import img_03 from "../../assets/image/blog-03.jpg";
 
 
+// == blog data == //
 export const blogsdata = [
     {
         id: "1",

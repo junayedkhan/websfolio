@@ -10,17 +10,17 @@ const Blogs = () => {
 
     return (
         <>
-
-        {/* == title area start == */}
-        <Title
-            title_bg="news"
-            text_1="my"
-            text_2="blogs"
-        />
-        {/* == title area end == */}
-
         {/* == blog area start */}
         <section className="blogs">
+
+            {/* == title area start == */}
+             <Title
+                title_bg="news"
+                text_1="my"
+                text_2="blogs"
+            />
+            {/* == title area end == */}
+
             <div className="container">
                 <div className="row">
 
