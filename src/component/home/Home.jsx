@@ -1,21 +1,7 @@
 import React from 'react'
+import Social from '../Social'
 
 const Home = () => {
-
-    const social_share = [
-        {
-            iconName: "fab fa-facebook-f",
-            link: "https://www.facebook.com/"
-        },
-        {
-            iconName: "fab fa-twitter",
-            link: "https://twitter.com/"
-        },
-        {
-            iconName: "fab fa-linkedin-in",
-            link: "https://www.linkedin.com/"
-        }
-    ]
 
     return (
         <>
@@ -40,24 +26,7 @@ const Home = () => {
                             </div>
 
                             {/* == social share area start */}
-                            <div className="row">
-                                 <div className="col-12">
-                                     <div className="social_share">
-                                        <span className="title">find with me</span>
-                                        <ul className="social_share_inner d-flex">
-                                            {social_share.map((val, index) => {
-                                                return(
-                                                <li key={index}>
-                                                    <a href={`${val.link}`} target="blank" className="social_icon">
-                                                        <i className={val.iconName}></i>
-                                                    </a>
-                                                </li>
-                                                )
-                                            })}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            <Social />
                             {/* == social share area end */}
 
                         </div>

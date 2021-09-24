@@ -1,32 +1,17 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import Title from "../Title"
+import Social from '../Social'
 import img from "../../assets/image/contact1.png"
 
 const Contact = () => {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
-    const social_share = [
-        {
-            iconName: "fab fa-facebook-f",
-            link: "https://www.facebook.com/"
-        },
-        {
-            iconName: "fab fa-twitter",
-            link: "https://twitter.com/"
-        },
-        {
-            iconName: "fab fa-linkedin-in",
-            link: "https://www.linkedin.com/"
-        }
-    ]
-
     const onSubmit = (data) => {
         console.log("massage: ", JSON.stringify(data) );
         reset()
     }
-
 
     return (
         <>
@@ -69,20 +54,7 @@ const Contact = () => {
                             {/* == number, email area end == */}
 
                             {/* == social area start */}
-                            <div className="social_share">
-                                <span className="title">find with me</span>
-                                <ul className="social_share_inner d-flex">
-                                    {social_share.map((val, index) => {
-                                        return(
-                                        <li key={index}>
-                                            <a href={`${val.link}`} target="blank" className="social_icon">
-                                                <i class={val.iconName}></i>
-                                            </a>
-                                        </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
+                            <Social />
                             {/* social area end */}
 
                         </div>
