@@ -40,7 +40,7 @@ const Home = () => {
                         </div> */}
                         <div className="thumbnail">
                             <div className="inner">
-                                <img src={"assets/image/home-02.png"} alt="Personal Portfolio Images" />
+                                <img src={"assets/image/home-01.png"} alt="Personal Portfolio Images" />
                             </div>
                         </div>
                     </div>

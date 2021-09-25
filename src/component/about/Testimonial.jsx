@@ -10,7 +10,6 @@ const Testimonial = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        lazyLoad: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         nextArrow: <SampleNextArrow />,
