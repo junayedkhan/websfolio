@@ -10,7 +10,7 @@ const PortfolioDetails = ({setopenModel, data}) => {
                 
                 <div className="align-items-center">
     
-                    <div className="porfolio_details_thumbnail">
+                    <div className="thumbnail">
                         <div className="inner">
                             <img src={data.img} alt={data.alt} />
                         </div>

@@ -1,0 +1,38 @@
+.comment{
+
+    .inner{
+
+        .title{
+            font-size: 32px;
+            font-weight: $p_semi_bold;
+            color: $color_heading_wv;
+            margin: 40px 0;
+        }
+
+        .form_group{
+            margin-bottom: 20px;
+            position: relative;
+
+            input{
+                @include input;
+            }
+    
+            textarea{
+                @include textarea;
+                height: 205px;
+            }
+
+            .errors{
+                @include errors;
+                top: -43px;
+            }
+        }
+            
+        .form_group_btn{
+
+            button{
+                @include button;
+            }
+        }
+    }
+}
