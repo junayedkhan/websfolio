@@ -18,6 +18,7 @@ const Router = () => {
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/blogs" component={Blogs} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/themewithoutanimation" component={Home} />
         </Switch>
     </section>
     )

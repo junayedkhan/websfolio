@@ -126,6 +126,10 @@
         .contact_btn{
             @include button;
             width: 100%;
+
+            span{
+                margin-right: 5px;
+            }
         }
 
 

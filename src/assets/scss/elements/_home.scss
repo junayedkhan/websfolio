@@ -35,23 +35,34 @@
 
             .title{
                 font-weight: 800;
-                font-size: 60px;
-                line-height: 75px;
+                font-size: 70px;
+                line-height: 80px;
                 margin-bottom: 22px;
                 font-family: $font_secondary;
 
                 @media #{$lg_layout}{
-                    font-size: 53px;
+                    font-size: 60px;
+                    line-height: 75px;
                 }
 
-                @media #{$md_layout, $sm_layout}{
-                    font-size: 43px;
-                    line-height: 60px;
+                @media #{$md_layout}{
+                    font-size: 70px;
+                    line-height: 80px;
+                }
+
+                @media #{$sm_layout} {
+                    font-size: 60px;
+                    line-height: 75px;
                 }
 
                 @media #{$large_mobile} {
-                    font-size: 35px;
-                    line-height: 47px;
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                @media #{$small_mobile} {
+                    font-size: 38px;
+                    line-height: 50px;
                 }
 
                 .text{

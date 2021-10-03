@@ -118,8 +118,13 @@
                         color: $color_body_white;
 
                         @media #{$large_mobile} {
-                            font-size: 14px;
+                            font-size: 15px;
                         }
+
+                        @media #{$small_mobile} {
+                            font-size: 13px;
+                        }
+                        
                     }
                 }
 

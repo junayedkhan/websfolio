@@ -17,7 +17,7 @@ const Home = () => {
                             <div className="inner">
                                 <span className="subtitle">WELCOME TO MY WORLD</span>
                                 <h1 className="title">
-                                    Hi, I’m <span className="text">Jone Lee</span> <br />
+                                    Hi, I’m <span className="text">John Lee</span> <br />
                                     <span className="text">a</span> Developer.
                                 </h1>
                                 <p className="description">

@@ -7,6 +7,7 @@
 
         .tag{
             @include button;
+            font-weight: 600;
             margin: 10px 5px;
             color: $color_heading_wv;
 
@@ -67,29 +68,15 @@
         margin-left: -10px;
 
         .button{
-            border: none;
-            background: $gradient_box_w;
-            box-shadow: $shadow_white_3;
-            height: 60px;
-            line-height: 60px;
-            padding: 0 20px;
-            font-size: 16px;
-            text-transform: uppercase;
-            border-radius: 6px;
-            font-weight: 500;
-            color: $color_primary;
+            @include button;
             margin: 0 10px;
-            @include transition;
 
             &:hover{
                 background: $gradient_red_hover;
                 transform: translateY(-5px);
                 color: $color_heading;
             }
-
-            @media #{$large_mobile} {
-                
-            }
+            
         }
 
     }

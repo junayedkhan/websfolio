@@ -11,12 +11,13 @@
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: $p_medium;
+        font-weight: 600;
+        opacity: .9;
         color: $color_heading_wv;
         display: inline-block;
         margin-bottom: 20px;
     }
-
+   
     .social_share_inner{
         margin: -10px -12px;
         flex-wrap: wrap;
