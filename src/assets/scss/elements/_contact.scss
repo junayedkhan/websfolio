@@ -205,18 +205,3 @@ body.dark .contact{
     }
 
 }
-
-
-
-body.dark{
-
-    .alert{
-    
-        .alert_btn{
-            @include button;
-            background: #fff;
-            padding: 6px 24px;
-        }
-        
-    }
-}

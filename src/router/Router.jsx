@@ -6,6 +6,7 @@ import About from '../component/about/About'
 import Portfolio from '../component/portfolio/Portfolio'
 import Blogs from '../component/blogs/Blogs'
 import Contact from '../component/contact/Contact'
+import PageNotFound from '../component/PageNotFound';
 
 
 const Router = () => {
@@ -18,7 +19,7 @@ const Router = () => {
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/blogs" component={Blogs} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/themewithoutanimation" component={Home} />
+            <Route component={PageNotFound} />
         </Switch>
     </section>
     )
