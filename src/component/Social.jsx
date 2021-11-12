@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Social = () => {
-
+    
     const social_share = [
         {
             iconName: "fab fa-facebook-f",
@@ -19,7 +19,6 @@ const Social = () => {
 
     return (
         <>
-        {/* == social share area start */}
         <div className="social_share">
             <span className="title">find with me</span>
             <ul className="social_share_inner d-flex">

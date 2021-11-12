@@ -1,73 +1,51 @@
 import React from 'react'
 import Comment from './Comment'
 
-const BlogDetails = ({ setopenModel, blog }) => {
+const BlogDetails = ({ setopenModel, data }) => {
 
-    console.log(blog)
     return (
         <>
-
-            {/* == blog details area start */}
-            <section className="react_model_inner">
-
-                {/* == button area start */}
-                <button onClick={() => setopenModel(false)} className="react_model_close"><i className="fas fa-times"></i></button>
-                {/* == button area end */}
-
-                <div className="blog_details">
-
-                    {/* == image area start */}
-                    <div className="thumbnail">
-                        <div className="inner">
-                            <img src={blog.img} alt="blog" />
-                        </div>
+        <article className="blog_details">
+            <button onClick={() => setopenModel(false)} className="react_model_close"><i className="fas fa-times"></i></button>
+            {/* == button area end */}
+            <div className="main_content">
+                <div className="thumbnail">
+                    <div className="inner">
+                        <img src={data.img} alt="blog" />
                     </div>
-                    {/* == imgage area end */}
-
-                    <div className="details">
-                        <p className="meta">{blog.meta}</p>
-                        <h3 className="title">{blog.title}</h3>
-                    </div>
-
-                    {/* == text area start == */}
-                    <div className="main_content">
-                        <div className="description">
-
-                            {/* == designation_01 == */}
-                            <p className="bigger">{blog.designation_01}</p>
-
-                            {/* == description_01 == */}
-                            <p>{blog.description_01}</p>
-
-                            {/* == description_02 == */}
-                            <p>{blog.description_02}</p>
-
-                            <div className="quote_box">
-                                <div className="icon">
-                                    <i className="fas fa-quote-left"></i>
-                                </div>
-                                {/* == designation_02 == */}
-                                <p>{blog.designation_02}</p>
-                            </div>
-
-                            {/* == designation_03 == */}
-                            <p>{blog.description_03}</p>
-
-                            {/* == designation_04 == */}
-                            <p>{blog.description_04}</p>
-
-                        </div>
-                    </div>
-                    {/* == text area end == */}
-
-                    {/* == comment area start == */}
-                    <Comment />
-                    {/* == comment area end == */}
-
                 </div>
-            </section>
-            {/* == blog details area end == */}
-
+                {/* == image area end */}
+                <div className="details">
+                    <p className="meta">{data.meta}</p>
+                    <h3 className="title">{data.title}</h3>
+                </div>
+                <div className="text_content">
+                    <div className="description">
+                        {/* == designation_01 == */}
+                        <p className="bigger">{data.designation_01}</p>
+                        {/* == description_01 == */}
+                        <p>{data.description_01}</p>
+                        {/* == description_02 == */}
+                        <p>{data.description_02}</p>
+                        <div className="quote_box">
+                            <div className="icon">
+                                <i className="fas fa-quote-left"></i>
+                            </div>
+                            {/* == designation_02 == */}
+                            <p>{data.designation_02}</p>
+                        </div>
+                        {/* == designation_03 == */}
+                        <p>{data.description_03}</p>
+                        {/* == designation_04 == */}
+                        <p>{data.description_04}</p>
+                    </div>
+                </div>
+                {/* == text area end == */}
+                <Comment />
+                {/* == comment area end == */}
+            </div>
+        </article>
+        {/* == blog details area end == */}
         </>
     )
 }

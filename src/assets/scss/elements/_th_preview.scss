@@ -1,0 +1,65 @@
+.th_preview{
+    height: 100vh;
+
+    .th_title{
+        text-align: center;
+        padding: 35px 0;
+
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            color: $color_heading_wv;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        
+        span{
+            font-size: 23px;
+            font-weight: 600;
+            color: $color_body_white;
+            opacity: 0.8;
+        }
+    }
+
+    .th_demo{
+        @include transition;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+
+        .demo_img{
+            background: $gradient_box_w;
+            box-shadow: $shadow_white_3;
+            // border: 10px solid $color_primary;
+            border-radius: 6px;
+            border-radius: 10px;
+            outline: none;
+            overflow: hidden;
+            padding: 10px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+
+        .demo_title{
+            font-size: 25px;
+            font-weight: 600;
+            padding: 20px;
+    
+        }
+
+    }
+
+    .buy_btn{
+        @include button;
+        font-size: 20px;
+        margin-top: -30px;
+        text-transform: capitalize;
+    }
+
+}

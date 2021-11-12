@@ -1,8 +1,21 @@
 import React from 'react'
-import {clients} from "./AboutData"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
+
+import brand_01 from "../../assets/image/1.png";
+import brand_02 from "../../assets/image/2.png";
+import brand_03 from "../../assets/image/3.png";
+import brand_04 from "../../assets/image/4.png";
+import brand_05 from "../../assets/image/5.png";
+
+const clientscontent = [
+    {img: brand_01, alt: "john due", name: "john due"},
+    {img: brand_02, alt: "Smiths Marth", name: "Smiths Marth"},
+    {img: brand_03, alt: "Adon Smith", name: "Adon Smith"},
+    {img: brand_04, alt: "Smitha Mila", name: "Smitha Mila"},
+    {img: brand_05, alt: "Mila Dus", name: "Mila Dus"}
+]
 
 const Clients = () => {
 
@@ -41,11 +54,9 @@ const Clients = () => {
     };
 
     return (
-        <>
         <section className="client_area">
-            {/* == single client area start == */}
             <Slider {...settings} className="client_slider">
-                {clients.map((val, index) => {
+                {clientscontent.map((val, index) => {
                     return(
                     <div className="inner" key={index}>
                         <div className="client" >
@@ -62,7 +73,6 @@ const Clients = () => {
             </Slider>
             {/* == single client area end == */}
         </section>
-        </>
     )
 }
 

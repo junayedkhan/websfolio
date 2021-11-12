@@ -46,3 +46,13 @@ img{
 .websfolio_th{
     position: relative;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+  background: $background_color_3;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background-color: $color_primary;
+}

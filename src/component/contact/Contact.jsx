@@ -1,72 +1,51 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import Title from "../Title"
 import Social from '../Social'
 import img from "../../assets/image/contact1.png"
 
 const Contact = () => {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm()
-
     const onSubmit = (data) => {
-        console.log("massage: ", JSON.stringify(data));
         reset()
+        console.log("massage: ", JSON.stringify(data));
     }
 
     return (
-        <>
-            <section className="contact">
-
-                {/* == title area start */}
-                <Title
-                    title_bg="withme"
-                    text_1="con"
-                    text_2="tact"
-                />
-                {/* == title area end */}
-
+        <section className="contact">
+            <div className="title_section">
+                <span className="title_bg">contact</span>
+                <h1 className="title" >get in <span>touch</span></h1>
+            </div>
+            {/* == title area end */}
+            <div className="main_content">
                 <div className="container">
                     <div className="row">
-
-                        {/* == contact about area start */}
                         <div className="col-lg-5 col-12 _mb_50">
                             <div className="contact_about_area">
-
-                                {/* == image area start == */}
                                 <div className="thumbnail">
                                     <img src={img} alt="contact" />
                                 </div>
                                 {/* == imgage area end == */}
-
-                                {/* == autor area start */}
                                 <div className="title_area">
                                     <h4 className="title">Nevine Acotanza</h4>
                                     <span>Chief Operating Officer</span>
                                 </div>
                                 {/* == autor area end == */}
-
-                                {/* == number, email area start */}
                                 <div className="description">
                                     <p>I am available for freelance work. Connect with me via and call in to my account.</p>
                                     <span className="phone">Phone: <a href="tel:00000000000">+01234567890</a></span>
                                     <span className="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
                                 </div>
                                 {/* == number, email area end == */}
-
-                                {/* == social area start */}
                                 <Social />
                                 {/* social area end */}
-
                             </div>
                         </div>
                         {/* == contact about area end */}
-
-                        {/* == from start == */}
                         <div className="col-lg-7 col-12">
                             <div className="contact_form_wrapper">
-
                                 <form className="row" id="contact_form" onSubmit={handleSubmit(onSubmit)}>
-
                                     {/* == name == */}
                                     <div className="col-lg-6">
                                         <div className="form_group">
@@ -80,7 +59,6 @@ const Contact = () => {
                                             {errors.name?.message && <p className="errors">{errors.name.message}</p>}
                                         </div>
                                     </div>
-
                                     {/* == phone == */}
                                     <div className="col-lg-6">
                                         <div className="form_group">
@@ -101,7 +79,6 @@ const Contact = () => {
                                             {errors.phone?.message && <p className="errors">{errors.phone.message}</p>}
                                         </div>
                                     </div>
-
                                     {/* == email == */}
                                     <div className="col-lg-12">
                                         <div className="form_group">
@@ -122,7 +99,6 @@ const Contact = () => {
                                             {errors.email?.message && <p className="errors">{errors.email.message}</p>}
                                         </div>
                                     </div>
-
                                     {/* == subject == */}
                                     <div className="col-lg-12">
                                         <div className="form_group">
@@ -136,7 +112,6 @@ const Contact = () => {
                                             {errors.subject?.message && <p className="errors">{errors.subject.message}</p>}
                                         </div>
                                     </div>
-
                                     {/* == massage == */}
                                     <div className="col-lg-12">
                                         <div className="form_group">
@@ -150,25 +125,21 @@ const Contact = () => {
                                             {errors.massage?.message && <p className="errors">{errors.massage.message}</p>}
                                         </div>
                                     </div>
-
-
                                     <div className="col-lg-12">
                                         <button name="submit" type="submit" id="submit" className="contact_btn">
                                             <span>SEND MESSAGE</span>
                                             <i className="fas fa-arrow-right"></i>
                                         </button>
+                                        {/* == button area end == */}
                                     </div>
-
                                 </form>
                             </div>
                         </div>
                         {/* == from end == */}
-
                     </div>
                 </div>
-
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
 

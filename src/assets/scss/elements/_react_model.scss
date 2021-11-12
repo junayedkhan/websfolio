@@ -13,7 +13,7 @@
     background: $gradient_box_w;
 }
 
-.react_model_inner{
+.react_model .react_model_inner{
     position: fixed;
     width: 968px;
     height: 80vh;
@@ -64,19 +64,16 @@
 
 
 // ===== dark mode ===== //
-body.dark{
+body.dark .react_model.overlay{
+    background: $background_color_2;
+}
 
-    .react_model.overlay{
-        background: $background_color_2;
-    }
+body.dark .react_model_inner{
+    background: $background_color_1;
+    box-shadow: $shadow_1;
+}
 
-    .react_model_inner{
-        background: $background_color_1;
-        box-shadow: $shadow_1;
-    }
-
-    .react_model_close{
-        background: $background_color_1;
-        box-shadow: $shadow_1;
-    }
+body.dark  .react_model_close{
+    background: $background_color_1;
+    box-shadow: $shadow_1;
 }

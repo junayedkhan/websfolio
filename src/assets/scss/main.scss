@@ -38,9 +38,10 @@
 
 
 // ===== elements ===== //
-@import "elements/side_navigation";
+@import "elements/th_preview";
+@import "elements/navigation";
 @import "elements/section_title";
-@import "elements/home";
+@import "elements/hero";
 @import "elements/about";
 @import "elements/testimonial";
 @import "elements/clients";
@@ -50,7 +51,7 @@
 @import "elements/portfolio";
 @import "elements/blogs";
 @import "elements/contact";
-@import "elements/pageNotFound";
+@import "elements/not_found";
 
 
 // ===== dark mode ===== //
