@@ -102,7 +102,7 @@ const Portfolio = () => {
 
 	return (
         <>
-        <section className="portfolio">
+        <section className="portfolio" data-aos="fade-up">
             <div className="title_section">
                 <span className="title_bg">works</span>
                 <h1 className="title" >my<span>portfolio</span></h1>

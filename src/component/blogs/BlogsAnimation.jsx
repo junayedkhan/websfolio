@@ -95,7 +95,7 @@ const Blogs = () => {
 
     return (
         <>
-        <section className="blogs">
+        <section className="blogs" data-aos="fade-up">
             <div className="title_section">
                     <span className="title_bg">news</span>
                     <h1 className="title" >my <span>blog</span></h1>

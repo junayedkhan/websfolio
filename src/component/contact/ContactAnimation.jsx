@@ -12,7 +12,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="contact">
+        <section className="contact" data-aos="fade-up">
             <div className="title_section">
                 <span className="title_bg">contact</span>
                 <h1 className="title" >get in<span>touch</span></h1>

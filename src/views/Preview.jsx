@@ -1,21 +1,59 @@
 import React from 'react'
-import with_animation from "../assets/image/Untitled-15.png"
-import without_animation from "../assets/image/Untitled-16.png"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import with_animation from "../assets/image/th-with-animation.png"
+import without_animation from "../assets/image/th-without-animation.png"
 
 const Preview = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ],
+    };
+
     return (
         <section className="th_preview">
+            <div className="th_title">
+                <h1>websfolio</h1>
+                <span>Personal Portfolio React Template</span>
+            </div>
+            {/* == title area end == */}
+            <div className="text-center price_btn">
+                <a href="/">
+                    <button className="buy_btn">buy now</button>
+                </a>
+            </div>
+            {/* == price btn area end == */}
             <div className="container">
-                <div className="row">
-
-                    <div className="col-12">
-                        <div className="th_title">
-                            <h1>websfolio</h1>
-                            <span>Personal Portfolio React Template</span>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-12 col-12 text-center" style={{paddingRight: "40px"}}>
+                <Slider {...settings}>
+                    <div className="text-center _mb_30">
                         <div className="th_demo">
                             <a href="/home-without-animation" target="_blank">
                                 <div className="demo_img">
@@ -25,8 +63,7 @@ const Preview = () => {
                             <p className="demo_title">Websfolio Without Animation</p>
                         </div> 
                     </div>
-
-                    <div className="col-lg-6 col-md-12 col-12 text-center" style={{paddingLeft: "40px"}}>
+                    <div className="text-center">
                         <div className="th_demo">
                             <a href="/home-with-animation" target="_blank">
                                 <div className="demo_img">
@@ -36,17 +73,11 @@ const Preview = () => {
                             <p className="demo_title">Websfolio With Animation</p>
                         </div>       
                     </div>
-
-                    <div className="col-12 text-center">
-                        <a href="/">
-                            <button className="buy_btn">buy now</button>
-                        </a>
-                    </div>
-
-                </div>
+                </Slider>
+                {/* == theme demo area end == */}
             </div>
         </section>
     )
 }
 
-export default Preview
+export default Preview;

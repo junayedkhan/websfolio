@@ -1,65 +1,77 @@
 .th_preview{
+    width: 100%;
     height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
 
-    .th_title{
-        text-align: center;
-        padding: 35px 0;
-
-        h1{
-            font-size: 60px;
-            font-weight: 700;
-            color: $color_heading_wv;
-            text-transform: capitalize;
-            margin-bottom: 10px;
-        }
-        
-        span{
-            font-size: 23px;
-            font-weight: 600;
-            color: $color_body_white;
-            opacity: 0.8;
-        }
+.th_preview .container{
+    @media #{$lg_device} {
+        max-width: 1100px;
     }
+}
 
-    .th_demo{
-        @include transition;
+.th_preview .th_title{
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
 
-        &:hover{
-            transform: translateY(-10px);
-        }
+.th_preview .th_title h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: $color_heading_wv;
+    text-transform: capitalize;
+    margin-bottom: 4px; 
+}
 
-        .demo_img{
-            background: $gradient_box_w;
-            box-shadow: $shadow_white_3;
-            // border: 10px solid $color_primary;
-            border-radius: 6px;
-            border-radius: 10px;
-            outline: none;
-            overflow: hidden;
-            padding: 10px;
+.th_preview .th_title span{
+    font-size: 21px;
+    font-weight: 600;
+    color: $color_body_white;
+    opacity: 0.8; 
+}
 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                cursor: pointer;
-            }
-        }
+.th_preview .th_demo{
+    @include transition; 
+}
 
-        .demo_title{
-            font-size: 25px;
-            font-weight: 600;
-            padding: 20px;
-    
-        }
+.th_preview .th_demo:hover{
+    transform: translateY(-10px);
+}
 
-    }
+.th_preview .th_demo .demo_img{
+    outline: none;
+    overflow: hidden;
+    padding: 10px;
+}
 
-    .buy_btn{
-        @include button;
-        font-size: 20px;
-        margin-top: -30px;
-        text-transform: capitalize;
-    }
+.th_preview .th_demo .demo_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
 
+.th_preview .th_demo .demo_title{
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 10px; 
+}
+
+.th_preview .price_btn{
+    position: fixed;
+    bottom: 5%;
+    width: 100%; 
+}
+
+.th_preview .price_btn .buy_btn{
+    @include button;
+    font-size: 20px;
+    text-transform: capitalize;
 }

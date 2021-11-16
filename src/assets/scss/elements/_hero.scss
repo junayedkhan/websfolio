@@ -2,11 +2,11 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     
     @media #{$md_layout, $sm_layout}{
         height: auto;
-        padding: 70px 0 40px 0; 
+        padding: 20px 0 40px 0; 
     }
 }
 

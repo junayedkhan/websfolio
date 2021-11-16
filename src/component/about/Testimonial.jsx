@@ -75,7 +75,7 @@ const Testimonial = () => {
         dots: true,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -110,33 +110,33 @@ const Testimonial = () => {
             {testimonialContent.map((val, index) => {
                 return(
                 <div className="inner" key={index}>
-                <div className="row">
-                    <div className="col-12">
-                        <div className="card_description">
-                            <div className="title_area">
-                                <h4 className="title">{val.title}</h4>
-                            </div>
-                            <div className="seperator"></div>
-                            <p className="description">{val.description}</p>
-                        </div>
-                    </div>
-                    {/* == description area start == */}
-                    <div className="col-12">
-                        <div className="card_info">
-                            <div className="card_img">
-                                <i></i>
-                                <div className="img" style={{backgroundImage: `url(${val.img})`}}></div>
-                                {/* <img src={val.img} alt={val.alt} className="img" /> */}
-                            </div>
-                            <div className="card_content">
-                                {/* <span className="subtitle">{val.subtitle}</span> */}
-                                <h3 className="name">{val.name}</h3>
-                                <span className="designation">{val.designation}</span>
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="card_description">
+                                <div className="title_area">
+                                    <h4 className="title">{val.title}</h4>
+                                </div>
+                                <div className="seperator"></div>
+                                <p className="description">{val.description}</p>
                             </div>
                         </div>
+                        {/* == description area start == */}
+                        <div className="col-12">
+                            <div className="card_info">
+                                <div className="card_img">
+                                    <i></i>
+                                    <div className="img" style={{backgroundImage: `url(${val.img})`}}></div>
+                                    {/* <img src={val.img} alt={val.alt} className="img" /> */}
+                                </div>
+                                <div className="card_content">
+                                    {/* <span className="subtitle">{val.subtitle}</span> */}
+                                    <h3 className="name">{val.name}</h3>
+                                    <span className="designation">{val.designation}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {/* == info area end == */}
                     </div>
-                    {/* == info area end == */}
-                </div>
                 </div>
                 )
             })}

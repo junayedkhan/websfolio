@@ -11,6 +11,12 @@
     }
 }
 
+._mb_30{
+    @media #{$md_layout, $sm_layout} {
+        margin-bottom: 30px !important;
+    }
+}
+
 ._mb_20{
     @media #{$large_mobile} {
         margin-bottom: 20px !important;

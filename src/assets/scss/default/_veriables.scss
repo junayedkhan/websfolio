@@ -107,9 +107,8 @@ $h4: 40px;
 $h5: 30px;
 $h6: 20px;
 
-
 // Layouts Variation
-$smlg_device: 'only screen and (max-width: 1199px)';
+$lg_device: 'only screen and (min-width: 1199px)';
 $extra_device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
 $laptop_device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
 $lg_layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';

@@ -5,7 +5,7 @@ import Social from '../Social'
 const Hero = () => {
 
     return (
-        <section className="hero">
+        <section className="hero" data-aos="fade-up">
             <div className="main_content">
                 <div className="container">
                     <div className="row about_content">
