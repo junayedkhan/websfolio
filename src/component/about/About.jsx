@@ -76,7 +76,7 @@ const About = () => {
             {/* == resume area end */}
             <section>
                 <div className="title_section">
-                    <span className="title_bg">CLIENT</span>
+                    <span className="title_bg">Clients</span>
                     <h1 className="title" >Testimo<span>nial</span></h1>
                 </div>
                 {/* == title area end == */}

@@ -99,7 +99,7 @@ const Home_without_animation = () => {
                     <Contact />
                 </TabPanel>
                 {/* == contact area end == */}
-                {/* === all tabpanel start === */}
+                {/* == all tabpanel start == */}
 
             </Tabs>
             {/* === tab area end === */}

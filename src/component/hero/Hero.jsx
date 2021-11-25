@@ -24,6 +24,7 @@ const Hero = () => {
                                         deleteSpeed={50}
                                         delaySpeed={2000}
                                     />
+                                    {/* == type write end == */}
                                 </h1>
                                 {/* == title area end == */}
                                 <p className="description">

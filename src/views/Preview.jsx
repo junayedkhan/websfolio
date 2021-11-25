@@ -53,7 +53,7 @@ const Preview = () => {
             {/* == price btn area end == */}
             <div className="container">
                 <Slider {...settings}>
-                    <div className="text-center _mb_30">
+                    <div className="text-center">
                         <div className="th_demo">
                             <a href="/home-without-animation" target="_blank">
                                 <div className="demo_img">

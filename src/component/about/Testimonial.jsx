@@ -17,7 +17,9 @@ const testimonialContent = [
         designation: "chief operating officer",
         title: "android app development",
         date: "vai Upwork - Mar 4, 2015 - Aug 30, 2021",
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book`
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+        took a galley of type and scrambled it to make a type specimen book`
     },
     {
         img: img_02,
@@ -27,7 +29,9 @@ const testimonialContent = [
         designation: "operating officer",
         title: "web App Development",
         date: "Upwork - Mar 4, 2016 - Aug 30, 2021",
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book`
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+        took a galley of type and scrambled it to make a type specimen book`
     },
     {
         img: img_03,
@@ -37,7 +41,9 @@ const testimonialContent = [
         designation: "CEO Of Officer",
         title: "Android App Design",
         date: "Fiver - Mar 4, 2015 - Aug 30, 2021",
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book`
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+        a galley of type and scrambled it to make a type specimen book`
     },
     {
         img: img_04,
@@ -47,7 +53,9 @@ const testimonialContent = [
         designation: "Marketing Officer",
         title: "CEO - Marketing",
         date: "Thoda Department - Mar 4, 2018 - Aug 30, 2021",
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book`
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+        galley of type and scrambled it to make a type specimen book`
     }
 ]
 
