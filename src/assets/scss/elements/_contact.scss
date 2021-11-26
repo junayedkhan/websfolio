@@ -64,6 +64,16 @@
     font-weight: $p_semi_bold;
 }
 
+.contact .main_content .contact_about_area .description .mail:hover a,
+.contact .main_content .contact_about_area .description .phone:hover a{
+    @include transition;
+}
+
+.contact .main_content .contact_about_area .description .mail:hover a,
+.contact .main_content .contact_about_area .description .phone:hover a{
+    color: $color_primary;
+}
+
 .contact .main_content .contact_about_area .social_share{
     justify-content: flex-start;
     align-items: flex-start;
