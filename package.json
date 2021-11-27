@@ -20,7 +20,6 @@
     "react-simple-typewriter": "^3.0.1",
     "react-slick": "^0.28.1",
     "react-tabs": "^3.2.2",
-    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
