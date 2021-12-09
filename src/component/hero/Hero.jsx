@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import Social from '../Social'
 
 const heroContent = {
-    name: "John Lee",
+    name: "Junayed",
     designation: ['Developer', 'Designer'],
     description: `I use animation as a third dimension by which to simplify experiences
                   and kuiding thro each and every interaction. I’m not adding motion
@@ -24,15 +24,8 @@ const Hero = () => {
                                 <h1 className="title">
                                     Hi, I’m <span className="text">{heroContent.name}</span> <br />
                                     <span className="text">a </span>
-                                    <Typewriter
-                                        words={heroContent.designation}
-                                        loop={true}
-                                        cursor
-                                        cursorStyle='_'
-                                        typeSpeed={100}
-                                        deleteSpeed={50}
-                                        delaySpeed={2000}
-                                    />
+                                    <Typewriter words={heroContent.designation} loop={true} cursor cursorStyle='_'
+                                        typeSpeed={100} deleteSpeed={50} delaySpeed={2000} />
                                     {/* == type write end == */}
                                 </h1>
                                 {/* == title area end == */}

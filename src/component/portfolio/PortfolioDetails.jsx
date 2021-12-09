@@ -26,10 +26,10 @@ const PortfolioDetails = ({setopenModel, data}) => {
                 </div>
                 {/* == text area end == */}
                 <div className="btn_group">
-                    <a href="/Home-without-animation" target="_blank">
+                    <a href="/" target="_blank">
                         <button className="button _mb_20">like this <i className="far fa-thumbs-up"></i></button>
                     </a>
-                    <a href="/Home-without-animation" target="_blank">
+                    <a href="/" target="_blank">
                         <button className="button">view project <i className="fas fa-chevron-right"></i></button>
                     </a>
                 </div>

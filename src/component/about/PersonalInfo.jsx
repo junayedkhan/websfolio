@@ -15,7 +15,7 @@ const personalInfo = [
 
 const PersonalInfo = () => {
     return (
-        <ul className="about_list list-unstyled">
+        <ul className="personal_info about_list list-unstyled">
             {personalInfo.map((val, index) => {
                 return(
                 <li key={index}>

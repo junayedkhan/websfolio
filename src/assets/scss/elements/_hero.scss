@@ -1,45 +1,45 @@
-.hero .main_content .about_content{
+.hero .main_content .about_content {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    @media #{$md_layout, $sm_layout}{
+
+    @media #{$md_layout, $sm_layout} {
         height: auto;
-        padding: 20px 0 40px 0; 
+        padding: 20px 0 40px 0;
     }
 }
 
-.hero .main_content .about_content .text_content{
+.hero .main_content .about_content .text_content {
     margin-bottom: 70px;
-    
+
     @media #{$lg_layout} {
         margin-bottom: 50px;
     }
 
-    @media #{$md_layout, $sm_layout}{
+    @media #{$md_layout, $sm_layout} {
         margin-top: 50px;
     }
 }
 
-.hero .main_content .about_content .text_content .subtitle{
+.hero .main_content .about_content .text_content .subtitle {
     @include subtitle;
     color: $color_body_white;
 }
 
-.hero .main_content .about_content .text_content .title{
+.hero .main_content .about_content .text_content .title {
     font-weight: 800;
     font-size: 70px;
     line-height: 80px;
     margin-bottom: 22px;
     font-family: $font_secondary;
 
-    @media #{$lg_layout}{
+    @media #{$lg_layout} {
         font-size: 55px;
         line-height: 65px;
     }
 
-    @media #{$md_layout}{
+    @media #{$md_layout} {
         font-size: 65px;
         line-height: 70px;
     }
@@ -60,11 +60,11 @@
     }
 }
 
-.hero .main_content .about_content .text_content .title .text{
+.hero .main_content .about_content .text_content .title .text {
     color: $color_primary;
 }
 
-.hero .main_content .about_content .text_content .description{
+.hero .main_content .about_content .text_content .description {
     font-size: 16px;
     line-height: 30px;
     color: $color_body_white;
@@ -72,7 +72,7 @@
     padding-right: 16%;
     opacity: 0.9;
 
-    @media #{$md_layout, $sm_layout}{
+    @media #{$md_layout, $sm_layout} {
         padding-right: 0%;
     }
 
@@ -81,13 +81,13 @@
     }
 }
 
-.hero .main_content .thumbnail{
+.hero .main_content .thumbnail {
     width: auto;
-    height: 600px;
+    height: 90vh;
     position: relative;
     border-radius: 10px;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -104,7 +104,7 @@
     }
 }
 
-.hero .main_content .thumbnail .inner{
+.hero .main_content .thumbnail .inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,25 +119,25 @@
 }
 
 // ===== dark mode ===== //
-body.dark .hero .main_content .about_content .text_content .subtitle{
+body.dark .hero .main_content .about_content .text_content .subtitle {
     color: $color_lightn;
     opacity: 0.9;
 }
 
-body.dark .hero .main_content .about_content .text_content .title{
+body.dark .hero .main_content .about_content .text_content .title {
     color: $color_heading;
 }
 
-body.dark .hero .main_content .about_content .text_content .title .text{
+body.dark .hero .main_content .about_content .text_content .title .text {
     color: $color_primary;
 }
 
-body.dark .hero .main_content .about_content .text_content .description{
+body.dark .hero .main_content .about_content .text_content .description {
     color: $color_lightn;
     opacity: 0.9;
 }
 
-body.dark .hero .main_content .thumbnail::before{
+body.dark .hero .main_content .thumbnail::before {
     background: $background_color_1;
     box-shadow: $shadow_1;
 }
