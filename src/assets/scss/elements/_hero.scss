@@ -32,6 +32,7 @@
     font-size: 70px;
     line-height: 80px;
     margin-bottom: 22px;
+    margin-left: -5px;
     font-family: $font_secondary;
 
     @media #{$lg_layout} {
@@ -45,7 +46,7 @@
     }
 
     @media #{$sm_layout} {
-        font-size: 54px;
+        font-size: 55px;
         line-height: 65px;
     }
 
@@ -62,6 +63,30 @@
 
 .hero .main_content .about_content .text_content .title .text {
     color: $color_primary;
+}
+ 
+.hero .main_content .about_content .text_content .designation{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: -3px;
+    font-family: $font_secondary;
+    padding-bottom: 22px;
+
+    @media #{$lg_layout} {
+        font-size: 35px;
+    }
+
+    @media #{$sm_layout} {
+        font-size: 35px;
+    }
+
+    @media #{$large_mobile} {
+        font-size: 30px;
+    }
+
+    @media #{$small_mobile} {
+        font-size: 25px;
+    }
 }
 
 .hero .main_content .about_content .text_content .description {
@@ -83,9 +108,13 @@
 
 .hero .main_content .thumbnail {
     width: auto;
-    height: 90vh;
+    height: 80vh;
     position: relative;
     border-radius: 10px;
+    
+    @media #{$md_layout, $sm_layout} {
+        height: 60vh;
+    }
 
     &::before {
         content: "";

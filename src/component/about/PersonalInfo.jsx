@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const personalInfo = [
     {title: "fast name", value: "John"},
@@ -14,7 +14,24 @@ const personalInfo = [
 ]
 
 const PersonalInfo = () => {
+
+    const [data, setData] = useState([])
+
+    const facthData = async() => {
+        const res = await fetch(`http://localhost:8000/personal`)
+        const data = await res.json()
+        return setData(data)
+    }
+
+
+    useEffect(() => {
+        facthData()
+    },[])
+
+    console.log(data)
+
     return (
+        <>
         <ul className="personal_info about_list list-unstyled">
             {personalInfo.map((val, index) => {
                 return(
@@ -27,6 +44,14 @@ const PersonalInfo = () => {
                 )
             })}
         </ul>
+        <ul>
+            {data.map((val, index) => {
+                return(
+                    <li key={index}>fast name: {val.fast_name}</li>
+                )
+            })}
+        </ul>
+        </>
     );
 };
 

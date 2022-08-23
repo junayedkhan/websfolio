@@ -10,6 +10,16 @@ const Home = () => {
 
     const [isOpen,setIsOpen] = useState(false);
     const openMenu= ()=> setIsOpen(!isOpen);
+    const [loading, setLoading] = useState(false)
+
+    // === loading screen === //
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
+    },[])
+
 
     // === dark mode area start === //
     const [darkMode, setDarkMode] = useState(false);
@@ -44,59 +54,59 @@ const Home = () => {
     ]
 
     return (
-        <main className="websfolio_th">
-            <button className="dark_and_light_btn" onClick={()=> setDarkMode(!darkMode)}
-                >
-                {darkMode ?
-                (<i className="fas fa-sun" style={{color: "#c4cfde"}}></i>) :
-                (<i className="fas fa-moon" style={{color: "#212428"}}></i>)}
-            </button>
-            {/* == dark mode button end == */}
-            <Tabs>
-                <div className={isOpen===false ? "nav_menu" : "nav_menu active" }>
-                    <TabList>
-                        {nav_item.map((val, index) => {
-                        return(
-                        <Tab key={index} className="nav_item" onClick={openMenu}>
-                            <i className={val.icon} id="icon"></i>
-                            <span className="tooltiptext">{val.menuName}</span>
-                        </Tab>
-                        )
-                        })}
-                    </TabList>
-                </div>
-                <button className={isOpen===false ? "hamburger" : "hamburger active" } onClick={openMenu}>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+        <main className={loading ? "websfolio_th preloaderShow" : "websfolio_th"}>
+            {loading ? <img src="assets/image/preloader.gif" alt="" /> : <>
+                <button className="dark_and_light_btn" onClick={()=> setDarkMode(!darkMode)}>
+                    {darkMode ?
+                    (<i className="fas fa-sun" style={{color: "#c4cfde"}}></i>) :
+                    (<i className="fas fa-moon" style={{color: "#212428"}}></i>)}
                 </button>
-                {/* == mobile nev button == */}
-                {/* end menu content == */}
-                <TabPanel>
-                    <Hero />
-                </TabPanel>
-                {/* == hero area end == */}
-                <TabPanel>
-                    <About />
-                </TabPanel>
-                {/* == about area end == */}
-                <TabPanel>
-                    <Portfolio />
-                </TabPanel>
-                {/* == portfolio area end == */}
-                <TabPanel>
-                    <Blogs />
-                </TabPanel>
-                {/* == blog area end == */}
-                <TabPanel>
-                    <Contact />
-                </TabPanel>
-                {/* == contact area end == */}
-                {/* === all tabpanel end === */}
-            </Tabs>
-            {/* === tab area end === */}
+                {/* == dark mode button end == */}
+                <Tabs>
+                    <div className={isOpen===false ? "nav_menu" : "nav_menu active" }>
+                        <TabList>
+                            {nav_item.map((val, index) => {
+                            return(
+                            <Tab key={index} className="nav_item" onClick={openMenu}>
+                                <i className={val.icon} id="icon"></i>
+                                <span className="tooltiptext">{val.menuName}</span>
+                            </Tab>
+                            )
+                            })}
+                        </TabList>
+                    </div>
+                    <button className={isOpen===false ? "hamburger" : "hamburger active" } onClick={openMenu}>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </button>
+                    {/* == mobile nev button == */}
+                    {/* end menu content == */}
+                    <TabPanel>
+                        <Hero />
+                    </TabPanel>
+                    {/* == hero area end == */}
+                    <TabPanel>
+                        <About />
+                    </TabPanel>
+                    {/* == about area end == */}
+                    <TabPanel>
+                        <Portfolio />
+                    </TabPanel>
+                    {/* == portfolio area end == */}
+                    <TabPanel>
+                        <Blogs />
+                    </TabPanel>
+                    {/* == blog area end == */}
+                    <TabPanel>
+                        <Contact />
+                    </TabPanel>
+                    {/* == contact area end == */}
+                    {/* === all tabpanel end === */}
+                </Tabs>
+                {/* === tab area end === */}
 
-
+            </>}
         </main>
     )
 }

@@ -4,7 +4,7 @@ import Social from '../Social'
 
 const heroContent = {
     name: "Junayed",
-    designation: ['Developer', 'Designer'],
+    designation: [' Developer', ' Designer'],
     description: `I use animation as a third dimension by which to simplify experiences
                   and kuiding thro each and every interaction. I’m not adding motion
                   just to spruce things up, but doing it in ways that.`,
@@ -22,12 +22,19 @@ const Hero = () => {
                             <div className="text_content">
                                 <span className="subtitle">WELCOME TO MY WORLD</span>
                                 <h1 className="title">
-                                    Hi, I’m <span className="text">{heroContent.name}</span> <br />
-                                    <span className="text">a </span>
-                                    <Typewriter words={heroContent.designation} loop={true} cursor cursorStyle='_'
-                                        typeSpeed={100} deleteSpeed={50} delaySpeed={2000} />
-                                    {/* == type write end == */}
+                                    Hi, I'm <span className="text">{heroContent.name}</span> <br />
                                 </h1>
+                                <p className="designation">
+                                    I'm a Web
+                                    <Typewriter 
+                                        words={heroContent.designation} 
+                                        loop={true} cursor cursorStyle='_'
+                                        typeSpeed={100} 
+                                        deleteSpeed={50} 
+                                        delaySpeed={2000} 
+                                    />
+                                </p>
+                                {/* == type write end == */}
                                 {/* == title area end == */}
                                 <p className="description">{heroContent.description}</p>
                                 {/* == description area end == */}
